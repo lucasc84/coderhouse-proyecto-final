@@ -1,0 +1,718 @@
+/* Formato de arbol . Numero - Numero Romano - Letra  */
+
+
+
+/* 1.) CONFIGURACION PARA INDEX.HTML y residual para subpaginas */
+
+
+/* Reset CSS */
+/* Resetea las propiedades de margen y relleno y establece el modelo de caja en border-box. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY - Configuración general */
+
+body {
+    background-color: #006290;
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: "Ubuntu", serif;
+    color: #FFFFFF;
+}
+
+/* I. HEADER */
+
+/* A. Banner de Encabezado - Contacto y Redes  */
+
+.banner-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #ADD8E6;
+    justify-content: space-between;
+    padding: 3px;
+    font-size: 14px;
+}
+
+.contact-info img {
+    width: 20px;
+    height: 20px;
+    filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%);
+    margin-right: 5px;
+}
+
+.contact-info a {
+    color: #0C0C89;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.contact-info a:hover,
+.contact-info a:active {
+    color: #ffffff;
+}
+
+
+.social-icons img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+}
+
+
+
+.banner-top a:hover img,
+.banner-top a:active img {
+    /* Cambia el color de las imagenes a blanco cuando hago hover o las cliqueo */
+    filter: brightness(0) invert(1);
+}
+
+
+/* B. Banner Principal - Título y logo */
+
+.titulo-logo {
+    background-color: #0C0C89;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.titulo-logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* II. NAVBAR: Menú de navegación (basado en bootstrap) */
+
+.navbar {
+    background-color: #ADD8E6;
+    /* Mismo color de fondo que banner-top */
+    padding: 1px;
+}
+
+.navbar-titulo {
+    color: #0C0C89;
+    text-decoration: none;
+    background-color: #83E2E2;
+    font-weight: bold;
+    border: 1px solid #0C0C89;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    /* border-radius: Redondea la esquina elegida del borde (en este caso todas pero podes asignarle top-left etc */
+}
+
+/* navbar - estilos en links */
+
+.navbar-nav .nav-link {
+    color: #0C0C89 !important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    /* Color de los enlaces al pasar el ratón por encima */
+    text-decoration: none;
+    /* Asegúrate de que no haya subrayado */
+}
+
+#navbarNav ul {
+    align-items: center;
+}
+
+/* navbar - sin scrollear */
+
+.navbar-fixed img.navbar-logo {
+    display: none;
+}
+
+.navbar-fixed navbar-text {
+    display: none;
+}
+
+.navbar-fixed p {
+    display: none;
+}
+
+/* navbar - en scroll */
+
+
+.navbar-titulo.scrolled {
+    display: none;
+}
+
+.navbar-logo.scrolled {
+    display: block !important;
+    height: 3em;
+    max-height: 100% !important;
+    padding-left: 20px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+}
+
+
+.navbar-text.scrolled {
+    display: block !important;
+    margin: 0 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0C0C89;
+}
+
+.navbar-collapse {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* III. MAIN - Contenido principal de la página */
+
+/* A. Elementos en general */
+
+h3 {
+    color: #83E2E2;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    -webkit-text-stroke: 1px #0C0C89;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+
+
+/* B. Cita */
+.cita {
+    margin: 0 0 10px 50px;
+    padding: 3px 25px;
+    font-style: italic;
+    text-align: right;
+    color: rgb(131, 226, 226);
+    border-left: 4px solid rgb(131, 226, 226);
+    border-right: 4px solid rgb(131, 226, 226);
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+}
+
+#leonardo {
+    font-size: 16px;
+    text-align: right;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 2px;
+}
+
+/* C. Contenedor Grid*/
+
+.contenedor-grid {
+
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 80px 100px repeat(2, 250px);
+    padding-top: 50px;
+    grid-template-areas:
+        "titulo titulo titulo"
+        "foto1 texto1 texto1"
+        "foto1 foto2 foto2"
+        "texto2 foto3 texto3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenedor-grid img {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+
+.contenedor-grid p {
+    font-size: 18px;
+
+}
+
+.grid-titulo-1 {
+    grid-area: titulo;
+
+}
+
+.grid-img-1 {
+    grid-area: foto1;
+    justify-self: left;
+    align-self: self-start;
+}
+
+.grid-texto-1 {
+    grid-area: texto1;
+}
+
+.grid-img-3 {
+    grid-area: foto2;
+    justify-self: right;
+}
+
+.grid-texto-2 {
+    grid-area: texto2;
+}
+
+.grid-img-2 {
+    grid-area: foto3;
+    align-self: self-end;
+}
+
+.grid-texto-3 {
+    grid-area: texto3;
+}
+
+
+/* IV. FOOTER - Pie de página y scripts */
+
+/* A. Pie de página */
+
+.copyright p {
+    text-align: right;
+    font-style: italic;
+    background-color: #ADD8E6;
+    /* Color de fondo */
+    color: #0C0C89;
+    /* Color del texto */
+    margin-top: 20px;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+/* B. Scripts */
+
+.whatsapp-btn {
+    color: rgb(255, 255, 255);
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+.scrollup img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 8%;
+    filter: invert(100%);
+    display: block;
+    /* Asegura que la imagen se muestre como un bloque */
+    border-radius: 50%;
+    /* Animación de respiración */
+}
+
+/* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
+
+/*  Boton de home para todas las subáginas menos index.html */
+
+.home {
+    height: 30px;
+    margin-left: 20px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+}
+
+/* I. SUBPAGINA NOSOTROS */
+
+
+/* A. Ejemplos de inserción multimedia relativa y externa */
+
+.multimedia {
+    text-align: right;
+}
+
+.multimedia p {
+    text-align: right;
+}
+
+.musica {
+    margin-top: 20px;
+}
+
+.video {
+    margin-top: 20px;
+}
+
+
+/* B. BOOTSTRAP - Carrousel */
+
+.carousel-caption h4 img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.carousel-inner img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+/* II. SUBPAGINA DE CONTACTO */
+
+
+
+/* A. formulario */
+
+form.contacto {
+    width: 90%;
+    color: #0C0C89;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ADD8E6;
+}
+
+form.contacto label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+form.contacto input,
+form.contacto textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+}
+
+form.contacto button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: #0C0C89;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form.contacto button:hover {
+    background-color: #004a99;
+}
+
+/* B. Mapa insertado */
+
+#mapa {
+    width: 48%;
+    color: #0C0C89;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ADD8E6;
+}
+
+/* C. BOOTSTRAP - Cards */
+
+.card {
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    color: #0C0C89;
+    background-color: #ADD8E6;
+}
+
+.btn.btn-primary {
+    background-color: #0C0C89;
+}
+
+.btn.btn-primary:hover {
+    background-color: #004a99;
+}
+
+.card img {
+    width: 20px;
+    height: 20px;
+    margin-right: 15px;
+    margin-left: 15px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+}
+
+
+/* 3.) MEDIA QUERIES */
+/* TELEFONO (hasta 500px) CAMBIARR ESTA EN 700 para probar en pc*/
+/* TABLET (hasta 992px) solo para el TP final*/
+
+@media (max-width: 500px) {
+
+    /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
+    .navbar-logo.scrolled {
+        display: none !important;
+    }
+}
+
+/* TAMAÑO PEQUEÑO (SERÍA MOBILE) para segunda entrega*/
+
+@media (max-width:992px) {
+
+    .contact-info-text {
+        display: none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .titulo-logo {
+        padding: 10px;
+    }
+
+    .titulo-logo img[src*="logo.png"] {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+
+    .navbar-titulo-movil {
+        color: #0C0C89 !important;
+        text-decoration: none;
+        background-color: #83E2E2;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid #0C0C89;
+        padding: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 15px;
+        animation: blink 2s infinite;
+    }
+
+    .navbar-text.scrolled {
+        padding: 1px !important;
+        font-size: 20px;
+    }
+
+    
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+    }
+
+    /* CONTENEDOR GRID*/
+
+    .contenedor-grid {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 50px;
+        grid-template-areas:
+            "titulo"
+            "foto1"
+            "texto1"
+            "foto2"
+            "texto2"
+            "foto3"
+            "texto3";
+    }
+
+    .contenedor-grid img {
+        width: 100% !important;
+        /* Ajusta el ancho al 100% del contenedor */
+        height: auto !important;
+        /* Mantiene la proporción de la imagen */
+        justify-self: center;
+    }
+
+    .contenedor-grid p {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .grid-titulo-1 {
+        grid-area: titulo;
+    }
+
+    .grid-img-1 {
+        grid-area: foto1;
+    }
+
+    .grid-img-2 {
+        grid-area: foto3;
+    }
+
+    .grid-img-3 {
+        grid-area: foto2;
+    }
+
+    .grid-texto-1 {
+        grid-area: texto1;
+    }
+
+    .grid-texto-2 {
+        grid-area: texto2;
+    }
+
+    .grid-texto-3 {
+        grid-area: texto3;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    /* PAGINA CONTACTO */
+
+    form.contacto label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: #000000;
+        text-align: center;
+    }
+
+    form.contacto h5 {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+    form.contacto button {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    #mapa {
+        width: 90%;
+    }
+
+    #mapa h5 {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .card {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        color: #0C0C89;
+        background-color: #ADD8E6;
+        text-align: center;
+
+    }
+
+    .card p {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+
+    .btn.btn-primary {
+        background-color: #0C0C89;
+        display: inline-block;
+
+    }
+
+    .btn.btn-primary:hover {
+        background-color: #004a99;
+    }
+
+    .card img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+    }
+
+
+
+    /* PAGINA NOSOTROS */
+
+    .carousel-caption {
+        max-height: 190px;
+    }
+
+    .carousel-item h4 {
+        font-size: 14px;
+    }
+
+    .carousel-item p {
+        font-size: 12px;
+    }
+
+    .main-nosotros,
+    .main-nosotros p {
+        text-align: center;
+    }
+
+    .multimedia,
+    .multimedia p {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+
+
+    /* 4.) KEYFRAMES (animación) */
+
+    @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+
+        50% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+}
