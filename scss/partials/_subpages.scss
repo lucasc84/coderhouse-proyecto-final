@@ -1,0 +1,9 @@
+/* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
+
+/*  Boton de home para todas las subáginas menos index.html */
+
+.home {
+    height: 30px;
+    margin-left: 20px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+}

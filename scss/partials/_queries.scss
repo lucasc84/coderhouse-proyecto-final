@@ -1,0 +1,238 @@
+
+/* 3.) MEDIA QUERIES */
+/* TELEFONO (hasta 500px) CAMBIARR ESTA EN 700 para probar en pc*/
+/* TABLET (hasta 992px) solo para el TP final*/
+
+@media (max-width: 500px) {
+
+    /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
+    .navbar-logo.scrolled {
+        display: none !important;
+    }
+}
+
+/* TAMAÑO PEQUEÑO (SERÍA MOBILE) para segunda entrega*/
+
+@media (max-width:992px) {
+
+    .contact-info-text {
+        display: none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .titulo-logo {
+        padding: 10px;
+    }
+
+    .titulo-logo img[src*="logo.png"] {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+
+    .navbar-titulo-movil {
+        color: #0C0C89 !important;
+        text-decoration: none;
+        background-color: #83E2E2;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid #0C0C89;
+        padding: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 15px;
+        animation: blink 2s infinite;
+    }
+
+    .navbar-text.scrolled {
+        padding: 1px !important;
+        font-size: 20px;
+    }
+
+    
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+    }
+
+    /* CONTENEDOR GRID*/
+
+    .contenedor-grid {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding-top: 50px;
+        grid-template-areas:
+            "titulo"
+            "foto1"
+            "texto1"
+            "foto2"
+            "texto2"
+            "foto3"
+            "texto3";
+    }
+
+    .contenedor-grid img {
+        width: 100% !important;
+        /* Ajusta el ancho al 100% del contenedor */
+        height: auto !important;
+        /* Mantiene la proporción de la imagen */
+        justify-self: center;
+    }
+
+    .contenedor-grid p {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .grid-titulo-1 {
+        grid-area: titulo;
+    }
+
+    .grid-img-1 {
+        grid-area: foto1;
+    }
+
+    .grid-img-2 {
+        grid-area: foto3;
+    }
+
+    .grid-img-3 {
+        grid-area: foto2;
+    }
+
+    .grid-texto-1 {
+        grid-area: texto1;
+    }
+
+    .grid-texto-2 {
+        grid-area: texto2;
+    }
+
+    .grid-texto-3 {
+        grid-area: texto3;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+
+    /* PAGINA CONTACTO */
+
+    form.contacto label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+        color: #000000;
+        text-align: center;
+    }
+
+    form.contacto h5 {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+    form.contacto button {
+        padding: 5px;
+        font-size: 0.8rem;
+    }
+
+    #mapa {
+        width: 90%;
+    }
+
+    #mapa h5 {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .card {
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        color: #0C0C89;
+        background-color: #ADD8E6;
+        text-align: center;
+
+    }
+
+    .card p {
+        font-size: 1rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+
+    .btn.btn-primary {
+        background-color: #0C0C89;
+        display: inline-block;
+
+    }
+
+    .btn.btn-primary:hover {
+        background-color: #004a99;
+    }
+
+    .card img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+        margin-left: 15px;
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+    }
+
+
+
+    /* PAGINA NOSOTROS */
+
+    .carousel-caption {
+        max-height: 190px;
+    }
+
+    .carousel-item h4 {
+        font-size: 14px;
+    }
+
+    .carousel-item p {
+        font-size: 12px;
+    }
+
+    .main-nosotros,
+    .main-nosotros p {
+        text-align: center;
+    }
+
+    .multimedia,
+    .multimedia p {
+        text-align: center;
+    }
+
+    .carousel-caption {
+        max-width: 70%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
+}
+

@@ -1,0 +1,49 @@
+
+/* I. SUBPAGINA NOSOTROS */
+
+
+/* A. Ejemplos de inserción multimedia relativa y externa */
+
+.multimedia {
+    text-align: right;
+}
+
+.multimedia p {
+    text-align: right;
+}
+
+.musica {
+    margin-top: 20px;
+}
+
+.video {
+    margin-top: 20px;
+}
+
+
+/* B. BOOTSTRAP - Carrousel */
+
+.carousel-caption h4 img {
+    width: 30px;
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.carousel-inner img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.carousel-caption {
+    max-width: 480px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    box-sizing: border-box;
+}

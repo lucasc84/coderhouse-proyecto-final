@@ -1,0 +1,82 @@
+/* II. NAVBAR: Menú de navegación (basado en bootstrap) */
+
+.navbar {
+    background-color: #ADD8E6;
+    /* Mismo color de fondo que banner-top */
+    padding: 1px;
+}
+
+.navbar-titulo {
+    color: #0C0C89;
+    text-decoration: none;
+    background-color: #83E2E2;
+    font-weight: bold;
+    border: 1px solid #0C0C89;
+    padding: 3px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    /* border-radius: Redondea la esquina elegida del borde (en este caso todas pero podes asignarle top-left etc */
+}
+
+/* navbar - estilos en links */
+
+.navbar-nav .nav-link {
+    color: #0C0C89 !important;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+    /* Color de los enlaces al pasar el ratón por encima */
+    text-decoration: none;
+    /* Asegúrate de que no haya subrayado */
+}
+
+#navbarNav ul {
+    align-items: center;
+}
+
+/* navbar - sin scrollear */
+
+.navbar-fixed img.navbar-logo {
+    display: none;
+}
+
+.navbar-fixed navbar-text {
+    display: none;
+}
+
+.navbar-fixed p {
+    display: none;
+}
+
+/* navbar - en scroll */
+
+
+.navbar-titulo.scrolled {
+    display: none;
+}
+
+.navbar-logo.scrolled {
+    display: block !important;
+    height: 3em;
+    max-height: 100% !important;
+    padding-left: 20px;
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+}
+
+
+.navbar-text.scrolled {
+    display: block !important;
+    margin: 0 10px;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0C0C89;
+}
+
+.navbar-collapse {
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto;
+}

@@ -1,0 +1,22 @@
+
+/* B. Scripts */
+
+.whatsapp-btn {
+    color: rgb(255, 255, 255);
+    background-color: transparent !important;
+    text-decoration: none;
+}
+
+.scrollup img {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 2%;
+    bottom: 8%;
+    filter: invert(100%);
+    display: block;
+    /* Asegura que la imagen se muestre como un bloque */
+    border-radius: 50%;
+    /* Animación de respiración */
+}
+
