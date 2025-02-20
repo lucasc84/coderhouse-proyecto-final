@@ -1,0 +1,45 @@
+.boton {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1rem;
+        background-color: #0C0C89;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+.boton-yt img {
+    filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+}
+
+//   // USO DE @EXTEND
+
+.boton-yt {
+@extend .boton;
+color: #0C0C89;
+background-color: #ADD8E6;
+width: fit-content;
+}
+
+.btn-primary  {
+@extend .boton;
+background-color: #0C0C89;
+width:fit-content;
+}
+
+
+// ANIMACIONES
+
+.boton:hover {
+background-color: #006290;
+}
+
+.boton-yt:hover {
+    color: #ADD8E6;
+    background-color: #0C0C89;
+}
+
+.boton-yt:hover img {
+    filter: brightness(0) saturate(100%) invert(95%) sepia(72%) saturate(6724%) hue-rotate(173deg) brightness(91%) contrast(98%);
+}

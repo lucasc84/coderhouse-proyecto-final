@@ -5,9 +5,17 @@
 @use 'partials/cita';
 @use 'partials/grid';
 @use 'partials/footer';
-@use 'partials/scripts';
+
 @use 'partials/subpages';
 @use 'partials/nosotros';
 @use 'partials/contacto';
+
+@use 'partials/buttons';
+
+
+
+
+// ABAJO DE TODO
+@use 'partials/scripts';
 @use 'partials/queries';
 @use 'partials/keyframes';
