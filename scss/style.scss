@@ -1,3 +1,8 @@
+
+// VARIABLES SIEMPRE PRIMERO
+@use 'partials/variables';
+
+
 @use 'partials/general';
 @use 'partials/header';
 @use 'partials/navbar';
@@ -15,7 +20,7 @@
 
 
 
-// ABAJO DE TODO
+// SIEMPRE ABAJO DE TODO
 @use 'partials/scripts';
-@use 'partials/queries';
 @use 'partials/keyframes';
+@use 'partials/queries';
