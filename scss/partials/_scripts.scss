@@ -1,12 +1,12 @@
 // VARIABLES SIEMPRE PRIMERO
-@use 'variables';
+@use 'variables' as *;
 
 
 
 /* B. Scripts */
 
 .whatsapp-btn {
-    color: rgb(255, 255, 255);
+    color: $blanco;
     background-color: transparent !important;
     text-decoration: none;
 }
@@ -17,7 +17,7 @@
     position: fixed;
     right: 2%;
     bottom: 8%;
-    filter: invert(100%);
+    filter: $blanco-i;
     display: block;
     /* Asegura que la imagen se muestre como un bloque */
     border-radius: 50%;

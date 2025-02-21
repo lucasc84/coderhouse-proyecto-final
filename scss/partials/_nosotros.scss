@@ -1,5 +1,5 @@
 // VARIABLES SIEMPRE PRIMERO
-@use 'variables';
+@use 'variables' as *;
 
 
 /* I. SUBPAGINA NOSOTROS */
@@ -27,15 +27,15 @@ audio {
     font-size: 1.1rem;
     border-radius: 4px;
     cursor: pointer;
-    background-color: variables.$azul-claro;
+    background-color: $azul-claro;
     /* Estilos adicionales */
     &::-webkit-media-controls-panel {
-        background-color: variables.$azul-claro;
+        background-color: $azul-claro;
     }
 }
 
 audio:hover {
-    background-color: variables.$azul-oscuro;
+    background-color: $azul-oscuro;
     }
 
 

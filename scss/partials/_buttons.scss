@@ -1,33 +1,33 @@
 // VARIABLES SIEMPRE PRIMERO
-@use 'variables';
+@use 'variables' as *;
 
 .boton {
         width: 100%;
         padding: 12px;
         font-size: 1.1rem;
-        background-color: variables.$azul-oscuro;
-        color: variables.$blanco;
+        background-color: $azul-oscuro;
+        color: $blanco;
         border: none;
         border-radius: 4px;
         cursor: pointer;
     }
 
 .boton-yt img {
-    filter: variables.$azul-oscuro-i;
+    filter: $azul-oscuro-i;
 }
 
 //   // USO DE @EXTEND
 
 .boton-yt {
 @extend .boton;
-color: variables.$azul-oscuro;
-background-color: variables.$azul-claro;
+color: $azul-oscuro;
+background-color: $azul-claro;
 width: fit-content;
 }
 
 .btn-primary  {
 @extend .boton;
-background-color: variables.$azul-oscuro;
+background-color: $azul-oscuro;
 width:fit-content;
 }
 
@@ -35,14 +35,14 @@ width:fit-content;
 // ANIMACIONES
 
 .boton:hover {
-background-color: variables.$azul-oscuro;
+background-color: $azul-oscuro;
 }
 
 .boton-yt:hover {
-    color: variables.$azul-claro;
-    background-color: variables.$azul-oscuro;
+    color: $azul-claro;
+    background-color: $azul-oscuro;
 }
 
 .boton-yt:hover img {
-    filter: variables.$azul-claro-i;
+    filter: $azul-claro-i;
 }

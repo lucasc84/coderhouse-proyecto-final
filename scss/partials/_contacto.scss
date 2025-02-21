@@ -1,5 +1,5 @@
 // VARIABLES SIEMPRE PRIMERO
-@use 'variables';
+@use 'variables' as *;
 
 
 
@@ -11,18 +11,18 @@
 
 form.contacto {
     width: 90%;
-    color: #0C0C89;
+    color: $azul-oscuro;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    background-color: #ADD8E6;
+    background-color: $azul-claro;
 }
 
 form.contacto label {
     display: block;
     margin-bottom: 5px;
     font-size: 1.1rem;
-    color: #000000;
+    color: $negro;
 }
 
 form.contacto input,
@@ -30,25 +30,19 @@ form.contacto textarea {
     width: 100%;
     padding: 10px;
     font-size: 1rem;
-    border: 1px solid #ffffff;
+    border: 1px solid $blanco;
     border-radius: 4px;
 }
-
-
-
-// form.contacto button:hover {
-//     background-color: #004a99;
-// }
 
 /* B. Mapa insertado */
 
 #mapa {
     width: 48%;
-    color: #0C0C89;
+    color: $azul-oscuro;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    background-color: #ADD8E6;
+    background-color: $azul-claro;
 }
 
 /* C. BOOTSTRAP - Cards */
@@ -57,23 +51,16 @@ form.contacto textarea {
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
-    color: #0C0C89;
-    background-color: #ADD8E6;
+    color: $azul-oscuro;
+    background-color: $azul-claro;
 }
 
-// .btn.btn-primary {
-//     background-color: #0C0C89;
-// }
-
-// .btn.btn-primary:hover {
-//     background-color: #004a99;
-// }
 
 .card img {
     width: 20px;
     height: 20px;
     margin-right: 15px;
     margin-left: 15px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+    filter: $blanco-i;
 }
 

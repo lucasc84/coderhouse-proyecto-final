@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   padding: 1em;
   font-family: "Ubuntu", serif;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* I. HEADER */
@@ -175,11 +175,11 @@ p {
   padding: 3px 25px;
   font-style: italic;
   text-align: right;
-  color: rgb(131, 226, 226);
-  border-left: 4px solid rgb(131, 226, 226);
-  border-right: 4px solid rgb(131, 226, 226);
+  color: #83E2E2;
+  border-left: 4px solid #83E2E2;
+  border-right: 4px solid #83E2E2;
   background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1019607843);
   font-size: 16px;
 }
 
@@ -187,7 +187,7 @@ p {
   font-size: 16px;
   text-align: right;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 2px;
 }
 
@@ -264,7 +264,7 @@ p {
 .home {
   height: 30px;
   margin-left: 20px;
-  filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 /* I. SUBPAGINA NOSOTROS */
@@ -381,7 +381,7 @@ form.contacto textarea {
   height: 20px;
   margin-right: 15px;
   margin-left: 15px;
-  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
 .boton, .btn-primary, .boton-yt {
@@ -427,7 +427,7 @@ form.contacto textarea {
 
 /* B. Scripts */
 .whatsapp-btn {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   background-color: transparent !important;
   text-decoration: none;
 }
@@ -438,7 +438,7 @@ form.contacto textarea {
   position: fixed;
   right: 2%;
   bottom: 8%;
-  filter: invert(100%);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   display: block;
   /* Asegura que la imagen se muestre como un bloque */
   border-radius: 50%;

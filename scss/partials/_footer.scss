@@ -1,5 +1,5 @@
 // VARIABLES SIEMPRE PRIMERO
-@use 'variables';
+@use 'variables' as *;
 
 
 /* IV. FOOTER - Pie de página y scripts */
@@ -9,9 +9,9 @@
 .copyright p {
     text-align: right;
     font-style: italic;
-    background-color: #ADD8E6;
+    background-color: $azul-claro;
     /* Color de fondo */
-    color: #0C0C89;
+    color: $azul-oscuro;
     /* Color del texto */
     margin-top: 20px;
     font-size: 14px;

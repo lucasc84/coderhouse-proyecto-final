@@ -1,5 +1,5 @@
 // VARIABLES SIEMPRE PRIMERO
-@use 'variables';
+@use 'variables' as *;
 
 
 // GENERAL
@@ -22,12 +22,12 @@
 // BODY - Configuración general
 
 body {
-    background-color: #006290;
+    background-color: $azul;
     display: flex;
     flex-direction: column;
     padding: 1em;
     font-family: "Ubuntu", serif;
-    color: #FFFFFF;
+    color: $blanco;
 }
 
 
