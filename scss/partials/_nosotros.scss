@@ -1,3 +1,6 @@
+// VARIABLES SIEMPRE PRIMERO
+@use 'variables';
+
 
 /* I. SUBPAGINA NOSOTROS */
 
@@ -15,6 +18,27 @@
 .musica {
     margin-top: 20px;
 }
+
+audio {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: variables.$azul-claro;
+    /* Estilos adicionales */
+    &::-webkit-media-controls-panel {
+        background-color: variables.$azul-claro;
+    }
+}
+
+audio:hover {
+    background-color: variables.$azul-oscuro;
+    }
+
+
 
 .video {
     margin-top: 20px;

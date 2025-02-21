@@ -2,6 +2,7 @@
 // VARIABLES SIEMPRE PRIMERO
 @use 'variables';
 
+
 /* I. HEADER */
 
 /* A. Banner de Encabezado - Contacto y Redes  */
@@ -11,7 +12,7 @@
     display: flex;
     align-items: center;
     font-weight: bold;
-    background-color: $azul-claro;
+    background-color: variables.$azul-claro;
     justify-content: space-between;
     padding: 3px;
     font-size: 14px;
@@ -20,19 +21,19 @@
 .contact-info img {
     width: 20px;
     height: 20px;
-    filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%);
+    filter: variables.$azul-oscuro-i;
     margin-right: 5px;
 }
 
 .contact-info a {
-    color: $azul-oscuro;
+    color: variables.$azul-oscuro;
     text-decoration: none;
     margin-right: 10px;
 }
 
 .contact-info a:hover,
 .contact-info a:active {
-    color: $blanco;
+    color: variables.$blanco;
 }
 
 
@@ -40,7 +41,7 @@
     width: 20px;
     height: 20px;
     margin-left: 10px;
-    filter: $azul-oscuro-i;
+    filter: variables.$azul-oscuro-i;
 }
 
 
@@ -48,14 +49,14 @@
 .banner-top a:hover img,
 .banner-top a:active img {
     /* Cambia el color de las imagenes a blanco cuando hago hover o las cliqueo */
-    filter: $blanco-i;
+    filter: variables.$blanco-i;
 }
 
 
 /* B. Banner Principal - Título y logo */
 
 .titulo-logo {
-    background-color: #2ba439;
+    background-color: variables.$azul-oscuro;
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;

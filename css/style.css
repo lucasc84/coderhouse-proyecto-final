@@ -30,7 +30,7 @@ body {
 .contact-info img {
   width: 20px;
   height: 20px;
-  filter: invert(17%) sepia(100%) saturate(7486%) hue-rotate(240deg) brightness(65%) contrast(104%);
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   margin-right: 5px;
 }
 
@@ -49,13 +49,13 @@ body {
   width: 20px;
   height: 20px;
   margin-left: 10px;
-  filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 .banner-top a:hover img,
 .banner-top a:active img {
   /* Cambia el color de las imagenes a blanco cuando hago hover o las cliqueo */
-  filter: brightness(0) invert(1);
+  filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
 /* B. Banner Principal - Título y logo */
@@ -94,12 +94,12 @@ body {
 
 /* navbar - estilos en links */
 .navbar-nav .nav-link {
-  color: #0C0C89 !important;
+  color: #0C0C89;
   text-decoration: none;
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffffff !important;
+  color: #ffffff;
   /* Color de los enlaces al pasar el ratón por encima */
   text-decoration: none;
   /* Asegúrate de que no haya subrayado */
@@ -132,7 +132,7 @@ body {
   height: 3em;
   max-height: 100% !important;
   padding-left: 20px;
-  filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 .navbar-text.scrolled {
@@ -281,6 +281,25 @@ p {
   margin-top: 20px;
 }
 
+audio {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 12px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ADD8E6;
+  /* Estilos adicionales */
+}
+audio::-webkit-media-controls-panel {
+  background-color: #ADD8E6;
+}
+
+audio:hover {
+  background-color: #0C0C89;
+}
+
 .video {
   margin-top: 20px;
 }
@@ -370,14 +389,14 @@ form.contacto textarea {
   padding: 12px;
   font-size: 1.1rem;
   background-color: #0C0C89;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
 .boton-yt img {
-  filter: brightness(0) saturate(100%) invert(11%) sepia(37%) saturate(6349%) hue-rotate(238deg) brightness(105%) contrast(126%);
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 .boton-yt {
@@ -394,7 +413,7 @@ form.contacto textarea {
 }
 
 .boton:hover, .boton-yt:hover, .btn-primary:hover {
-  background-color: #006290;
+  background-color: #0C0C89;
 }
 
 .boton-yt:hover {
@@ -403,7 +422,7 @@ form.contacto textarea {
 }
 
 .boton-yt:hover img {
-  filter: brightness(0) saturate(100%) invert(95%) sepia(72%) saturate(6724%) hue-rotate(173deg) brightness(91%) contrast(98%);
+  filter: brightness(0) saturate(100%) invert(96%) sepia(85%) saturate(873%) hue-rotate(167deg) brightness(94%) contrast(91%);
 }
 
 /* B. Scripts */

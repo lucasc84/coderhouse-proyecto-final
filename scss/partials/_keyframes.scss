@@ -1,5 +1,8 @@
+// VARIABLES SIEMPRE PRIMERO
+@use 'variables';
 
-    /* 4.) KEYFRAMES (animación) */
+
+/* 4.) KEYFRAMES (animación) */
 
     @keyframes blink {
         0% {
