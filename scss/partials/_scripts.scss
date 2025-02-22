@@ -7,8 +7,11 @@
 
 .whatsapp-btn {
     color: $blanco;
-    background-color: transparent !important;
     text-decoration: none;
+}
+
+a.whatsapp-btn {
+    background-color: transparent;
 }
 
 .scrollup img {

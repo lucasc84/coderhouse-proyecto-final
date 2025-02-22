@@ -10,8 +10,8 @@
 @media (max-width: 500px) {
 
     /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
-    .navbar-logo.scrolled {
-        display: none !important;
+nav .navbar-logo.scrolled {
+        display: none;
     }
 }
 
@@ -45,12 +45,12 @@
     }
 
     .navbar-titulo-movil {
-        color: #0C0C89 !important;
+        color: $azul-oscuro;
         text-decoration: none;
-        background-color: #83E2E2;
+        background-color: $azul-fuerte;
         font-weight: bold;
         font-size: 16px;
-        border: 1px solid #0C0C89;
+        border: 1px solid $azul-oscuro;
         padding: 1px;
         padding-right: 10px;
         padding-left: 10px;
@@ -59,7 +59,7 @@
     }
 
     .navbar-text.scrolled {
-        padding: 1px !important;
+        padding: 1px;
         font-size: 20px;
     }
 
@@ -89,9 +89,9 @@
     }
 
     .contenedor-grid img {
-        width: 100% !important;
+        width: 100%;
         /* Ajusta el ancho al 100% del contenedor */
-        height: auto !important;
+        height: auto;
         /* Mantiene la proporción de la imagen */
         justify-self: center;
     }
@@ -141,9 +141,7 @@
 
     form.contacto label {
         display: block;
-        margin-bottom: 5px;
         font-size: 0.8rem;
-        color: #000000;
         text-align: center;
     }
 
@@ -172,8 +170,8 @@
         margin: 20px auto;
         padding: 20px;
         border-radius: 8px;
-        color: #0C0C89;
-        background-color: #ADD8E6;
+        color: $azul-oscuro;
+        background-color: $azul-claro;
         text-align: center;
 
     }
@@ -200,7 +198,7 @@
         height: 20px;
         margin-right: 15px;
         margin-left: 15px;
-        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+        filter: $blanco-i;
     }
 
 
@@ -234,7 +232,7 @@
         width: 100%;
         margin: 0 auto;
         padding: 10px;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: $negro-transparente;
         border-radius: 8px;
         box-sizing: border-box;
     }

@@ -63,17 +63,17 @@
     display: none;
 }
 
-.navbar-logo.scrolled {
-    display: block !important;
+nav .navbar-logo.scrolled {
+    display: block;
     height: 3em;
-    max-height: 100% !important;
+    max-height: 100%;
     padding-left: 20px;
     filter: $azul-oscuro-i;
 }
 
 
 .navbar-text.scrolled {
-    display: block !important;
+    display: block;
     margin: 0 10px;
     font-size: 26px;
     font-weight: bold;

@@ -127,16 +127,16 @@ body {
   display: none;
 }
 
-.navbar-logo.scrolled {
-  display: block !important;
+nav .navbar-logo.scrolled {
+  display: block;
   height: 3em;
-  max-height: 100% !important;
+  max-height: 100%;
   padding-left: 20px;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 .navbar-text.scrolled {
-  display: block !important;
+  display: block;
   margin: 0 10px;
   font-size: 26px;
   font-weight: bold;
@@ -178,8 +178,8 @@ p {
   color: #83E2E2;
   border-left: 4px solid #83E2E2;
   border-right: 4px solid #83E2E2;
-  background-color: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1019607843);
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5019607843);
   font-size: 16px;
 }
 
@@ -325,7 +325,7 @@ audio:hover {
   width: 100%;
   margin: 0 auto;
   padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5019607843);
   border-radius: 8px;
   box-sizing: border-box;
 }
@@ -428,8 +428,11 @@ form.contacto textarea {
 /* B. Scripts */
 .whatsapp-btn {
   color: #ffffff;
-  background-color: transparent !important;
   text-decoration: none;
+}
+
+a.whatsapp-btn {
+  background-color: transparent;
 }
 
 .scrollup img {
@@ -462,8 +465,8 @@ form.contacto textarea {
 /* TABLET (hasta 992px) solo para el TP final*/
 @media (max-width: 500px) {
   /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
-  .navbar-logo.scrolled {
-    display: none !important;
+  nav .navbar-logo.scrolled {
+    display: none;
   }
 }
 /* TAMAÑO PEQUEÑO (SERÍA MOBILE) para segunda entrega*/
@@ -488,7 +491,7 @@ form.contacto textarea {
     display: none;
   }
   .navbar-titulo-movil {
-    color: #0C0C89 !important;
+    color: #0C0C89;
     text-decoration: none;
     background-color: #83E2E2;
     font-weight: bold;
@@ -501,7 +504,7 @@ form.contacto textarea {
     animation: blink 2s infinite;
   }
   .navbar-text.scrolled {
-    padding: 1px !important;
+    padding: 1px;
     font-size: 20px;
   }
   .navbar-toggler:focus,
@@ -517,9 +520,9 @@ form.contacto textarea {
     grid-template-areas: "titulo" "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
   }
   .contenedor-grid img {
-    width: 100% !important;
+    width: 100%;
     /* Ajusta el ancho al 100% del contenedor */
-    height: auto !important;
+    height: auto;
     /* Mantiene la proporción de la imagen */
     justify-self: center;
   }
@@ -556,9 +559,7 @@ form.contacto textarea {
   /* PAGINA CONTACTO */
   form.contacto label {
     display: block;
-    margin-bottom: 5px;
     font-size: 0.8rem;
-    color: #000000;
     text-align: center;
   }
   form.contacto h5 {
@@ -596,7 +597,7 @@ form.contacto textarea {
     height: 20px;
     margin-right: 15px;
     margin-left: 15px;
-    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(292deg) brightness(105%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   }
   /* PAGINA NOSOTROS */
   .carousel-caption {
@@ -621,7 +622,7 @@ form.contacto textarea {
     width: 100%;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5019607843);
     border-radius: 8px;
     box-sizing: border-box;
   }
