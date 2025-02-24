@@ -6,7 +6,8 @@
 
 
 .navbar {
-    background-color: $azul-claro;
+     //   background-color: $azul-claro;
+     @include banners;
     /* Mismo color de fondo que banner-top */
     padding: 1px;
 }

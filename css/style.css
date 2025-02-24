@@ -17,11 +17,12 @@ body {
 /* I. HEADER */
 /* A. Banner de Encabezado - Contacto y Redes  */
 .banner-top {
+  color: rgba(253, 0, 0, 0.9921568627);
+  background-color: rgba(0, 251, 88, 0.9843137255);
   width: 100%;
   display: flex;
   align-items: center;
   font-weight: bold;
-  background-color: #ADD8E6;
   justify-content: space-between;
   padding: 3px;
   font-size: 14px;
@@ -35,7 +36,8 @@ body {
 }
 
 .contact-info a {
-  color: #0C0C89;
+  color: rgba(253, 0, 0, 0.9921568627);
+  background-color: rgba(0, 251, 88, 0.9843137255);
   text-decoration: none;
   margin-right: 10px;
 }
@@ -74,7 +76,8 @@ body {
 
 /* II. NAVBAR: Menú de navegación (basado en bootstrap) */
 .navbar {
-  background-color: #ADD8E6;
+  color: rgba(253, 0, 0, 0.9921568627);
+  background-color: rgba(0, 251, 88, 0.9843137255);
   /* Mismo color de fondo que banner-top */
   padding: 1px;
 }
@@ -250,9 +253,9 @@ p {
 .copyright p {
   text-align: right;
   font-style: italic;
-  background-color: #ADD8E6;
+  color: rgba(253, 0, 0, 0.9921568627);
+  background-color: rgba(0, 251, 88, 0.9843137255);
   /* Color de fondo */
-  color: #0C0C89;
   /* Color del texto */
   margin-top: 20px;
   font-size: 14px;
@@ -413,7 +416,7 @@ form.contacto textarea {
 }
 
 .boton:hover, .boton-yt:hover, .btn-primary:hover {
-  background-color: #0C0C89;
+  background-color: #006290;
 }
 
 .boton-yt:hover {

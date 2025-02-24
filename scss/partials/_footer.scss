@@ -9,9 +9,10 @@
 .copyright p {
     text-align: right;
     font-style: italic;
-    background-color: $azul-claro;
+    @include banners;
+    // background-color: $azul-claro;
     /* Color de fondo */
-    color: $azul-oscuro;
+    // color: $azul-oscuro;
     /* Color del texto */
     margin-top: 20px;
     font-size: 14px;

@@ -8,11 +8,11 @@
 /* A. Banner de Encabezado - Contacto y Redes  */
 
 .banner-top {
+    @include banners;
     width: 100%;
     display: flex;
     align-items: center;
     font-weight: bold;
-    background-color: $azul-claro;
     justify-content: space-between;
     padding: 3px;
     font-size: 14px;
@@ -26,7 +26,8 @@
 }
 
 .contact-info a {
-    color: $azul-oscuro;
+    @include banners;
+//  color: $azul-oscuro;
     text-decoration: none;
     margin-right: 10px;
 }
