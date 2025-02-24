@@ -1,4 +1,3 @@
-
 // VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
@@ -18,40 +17,44 @@
     font-size: 14px;
 }
 
-.contact-info img {
-    width: 20px;
-    height: 20px;
-    filter: $azul-oscuro-i;
-    margin-right: 5px;
-}
 
-.contact-info a {
+
+.banner-top a {
     @include banners;
-//  color: $azul-oscuro;
-    text-decoration: none;
     margin-right: 10px;
 }
 
-.contact-info a:hover,
-.contact-info a:active {
+.banner-top img {
+    @include link-azul;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.social-icons img {
+    @include link-azul;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; //ver biene xtructura variable del mixin, esto peude ser una variable del mixin, usar todos juntos y cambiar esto, lo mismo el temaño (o no pq es uno solo)
+}
+
+
+.banner-top a:hover,
+.banner-top a:active {
     color: $blanco;
 }
 
-
-.social-icons img {
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-    filter: $azul-oscuro-i;
-}
-
-
-
 .banner-top a:hover img,
 .banner-top a:active img {
-    /* Cambia el color de las imagenes a blanco cuando hago hover o las cliqueo */
     filter: $blanco-i;
 }
+
+
+
+
+
+
+
 
 
 /* B. Banner Principal - Título y logo */

@@ -17,8 +17,9 @@ body {
 /* I. HEADER */
 /* A. Banner de Encabezado - Contacto y Redes  */
 .banner-top {
-  color: rgba(253, 0, 0, 0.9921568627);
-  background-color: rgba(0, 251, 88, 0.9843137255);
+  color: #0C0C89;
+  background-color: #ADD8E6;
+  text-decoration: none;
   width: 100%;
   display: flex;
   align-items: center;
@@ -28,35 +29,38 @@ body {
   font-size: 14px;
 }
 
-.contact-info img {
-  width: 20px;
-  height: 20px;
-  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
-  margin-right: 5px;
-}
-
-.contact-info a {
-  color: rgba(253, 0, 0, 0.9921568627);
-  background-color: rgba(0, 251, 88, 0.9843137255);
+.banner-top a {
+  color: #0C0C89;
+  background-color: #ADD8E6;
   text-decoration: none;
   margin-right: 10px;
 }
 
-.contact-info a:hover,
-.contact-info a:active {
-  color: #ffffff;
+.banner-top img {
+  color: #0C0C89;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
+  text-decoration: none;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
 }
 
 .social-icons img {
+  color: #0C0C89;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
+  text-decoration: none;
   width: 20px;
   height: 20px;
   margin-left: 10px;
-  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
+}
+
+.banner-top a:hover,
+.banner-top a:active {
+  color: #ffffff;
 }
 
 .banner-top a:hover img,
 .banner-top a:active img {
-  /* Cambia el color de las imagenes a blanco cuando hago hover o las cliqueo */
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
@@ -75,13 +79,6 @@ body {
 }
 
 /* II. NAVBAR: Menú de navegación (basado en bootstrap) */
-.navbar {
-  color: rgba(253, 0, 0, 0.9921568627);
-  background-color: rgba(0, 251, 88, 0.9843137255);
-  /* Mismo color de fondo que banner-top */
-  padding: 1px;
-}
-
 .navbar-titulo {
   color: #0C0C89;
   text-decoration: none;
@@ -96,9 +93,11 @@ body {
 }
 
 /* navbar - estilos en links */
-.navbar-nav .nav-link {
+.navbar, .navbar-nav, .nav-link {
   color: #0C0C89;
+  background-color: #ADD8E6;
   text-decoration: none;
+  padding: 1px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -131,11 +130,13 @@ body {
 }
 
 nav .navbar-logo.scrolled {
+  color: #0C0C89;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
+  text-decoration: none;
   display: block;
   height: 3em;
   max-height: 100%;
   padding-left: 20px;
-  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 .navbar-text.scrolled {
@@ -253,10 +254,9 @@ p {
 .copyright p {
   text-align: right;
   font-style: italic;
-  color: rgba(253, 0, 0, 0.9921568627);
-  background-color: rgba(0, 251, 88, 0.9843137255);
-  /* Color de fondo */
-  /* Color del texto */
+  color: #0C0C89;
+  background-color: #ADD8E6;
+  text-decoration: none;
   margin-top: 20px;
   font-size: 14px;
   margin-bottom: 0px;
@@ -265,9 +265,11 @@ p {
 /* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
 /*  Boton de home para todas las subáginas menos index.html */
 .home {
+  color: #0C0C89;
+  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
+  text-decoration: none;
   height: 30px;
   margin-left: 20px;
-  filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
 }
 
 /* I. SUBPAGINA NOSOTROS */
