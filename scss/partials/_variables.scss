@@ -1,5 +1,3 @@
-
-
 // COLORES TEXTO Y BACKGROUND
 
 $azul: #006290;
@@ -19,14 +17,36 @@ $azul-fuerte-i: brightness(0) saturate(100%) invert(96%) sepia(49%) saturate(113
 $blanco-i: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 $negro-i: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7485%) hue-rotate(2deg) brightness(101%) contrast(104%);
 
+
+
+// MIXIN FIJO - BANNERS
+
 @mixin banners {
     color: $azul-oscuro;
     background-color: $azul-claro;
     text-decoration: none;
-    }
+}
 
-@mixin link-azul {
-        color: $azul-oscuro;
-        filter: $azul-oscuro-i;
-        text-decoration: none;
-    }
+// MIXIN VARIABLES (ICONOS Y TEXTO DE LINKS)
+
+@mixin link-azul($var1, $var2) {
+    width: $var1;
+    height: $var2;
+    color: $azul-oscuro;
+    filter: $azul-oscuro-i;
+    text-decoration: none;
+}
+
+@mixin link-blanco($var1, $var2) {
+    width: $var1;
+    height: $var2;
+    color: $blanco;
+    filter: $blanco-i;
+    text-decoration: none;
+}
+
+@mixin hover-blanco {
+    color: $blanco;
+    filter: $blanco-i;
+    text-decoration: none;
+}

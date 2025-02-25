@@ -60,9 +60,8 @@
 }
 
 nav .navbar-logo.scrolled {
-    @include link-azul;
+    @include link-azul(auto, 3em);
     display: block;
-    height: 3em;
     max-height: 100%;
     padding-left: 20px;    
 }

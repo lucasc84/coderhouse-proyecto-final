@@ -25,16 +25,12 @@
 }
 
 .banner-top img {
-    @include link-azul;
-    width: 20px;
-    height: 20px;
+    @include link-azul(20px, 20px);
     margin-right: 5px;
 }
 
 .social-icons img {
-    @include link-azul;
-    width: 20px;
-    height: 20px;
+    @include link-azul(20px, 20px);
     margin-left: 10px; //ver biene xtructura variable del mixin, esto peude ser una variable del mixin, usar todos juntos y cambiar esto, lo mismo el temaño (o no pq es uno solo)
 }
 
@@ -68,6 +64,5 @@
 }
 
 .titulo-logo img {
-    width: 180px;
-    height: auto;
+    @include link-blanco(180px, auto);
 }

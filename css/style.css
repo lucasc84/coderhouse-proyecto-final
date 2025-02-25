@@ -37,20 +37,20 @@ body {
 }
 
 .banner-top img {
+  width: 20px;
+  height: 20px;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
-  width: 20px;
-  height: 20px;
   margin-right: 5px;
 }
 
 .social-icons img {
+  width: 20px;
+  height: 20px;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
-  width: 20px;
-  height: 20px;
   margin-left: 10px;
 }
 
@@ -76,6 +76,9 @@ body {
 .titulo-logo img {
   width: 180px;
   height: auto;
+  color: #ffffff;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
+  text-decoration: none;
 }
 
 /* II. NAVBAR: Menú de navegación (basado en bootstrap) */
@@ -130,11 +133,12 @@ body {
 }
 
 nav .navbar-logo.scrolled {
+  width: auto;
+  height: 3em;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
   display: block;
-  height: 3em;
   max-height: 100%;
   padding-left: 20px;
 }
@@ -265,10 +269,11 @@ p {
 /* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
 /*  Boton de home para todas las subáginas menos index.html */
 .home {
+  width: 30px;
+  height: 30px;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
-  height: 30px;
   margin-left: 20px;
 }
 
