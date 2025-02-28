@@ -1,67 +1,47 @@
+// filepath: /home/lucas/Documentos/3-entrega-coderhouse/scss/partials/_nosotros.scss
 // VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
-
 /* I. SUBPAGINA NOSOTROS */
 
-
 /* A. Ejemplos de inserción multimedia relativa y externa */
-
 .multimedia {
     text-align: right;
-}
 
-.multimedia p {
-    text-align: right;
-}
-
-.musica {
-    margin-top: 20px;
-}
-
-audio {
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 12px;
-    font-size: 1.1rem;
-    border-radius: 4px;
-    cursor: pointer;
-    background-color: $azul-claro;
-    /* Estilos adicionales */
-    &::-webkit-media-controls-panel {
-        background-color: $azul-claro;
-    }
-}
-
-audio:hover {
-    background-color: $azul-oscuro;
+    p {
+        text-align: right;
     }
 
+    .musica {
+        margin-top: 20px;
 
+        audio {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 12px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            background-color: $azul-claro;
 
-.video {
-    margin-top: 20px;
+            /* Estilos adicionales */
+            &::-webkit-media-controls-panel {
+                background-color: $azul-claro;
+            }
+
+            &:hover {
+                background-color: $azul-oscuro;
+            }
+        }
+    }
+
+    .video {
+        margin-top: 20px;
+    }
 }
-
 
 /* B. BOOTSTRAP - Carrousel */
-
-.carousel-caption h4 img {
-    width: 30px;
-    height: auto;
-    margin-right: 5px;
-    vertical-align: middle;
-}
-
-.carousel-inner img {
-    max-width: 500px;
-    max-height: 500px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-}
-
 .carousel-caption {
     max-width: 480px;
     width: 100%;
@@ -70,4 +50,19 @@ audio:hover {
     background-color: $negro-transparente;
     border-radius: 8px;
     box-sizing: border-box;
+
+    h4 img {
+        width: 30px;
+        height: auto;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+}
+
+.carousel-inner img {
+    max-width: 500px;
+    max-height: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }

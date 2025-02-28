@@ -21,36 +21,35 @@
 
 /* navbar - estilos en links */
 
-.navbar, .navbar-nav, .nav-link {
-// color: $azul-oscuro;
-@include banners;
+.navbar {
+    @include banners;
     padding: 1px;
+
+    &-nav {
+        .nav-link {
+            color: $azul-oscuro;
+            &:hover {
+                color: $blanco;
+                text-decoration: none;
+            }
+        }
+    }
+
+    &-fixed {
+        img.navbar-logo,
+        navbar-text,
+        p {
+            display: none;
+        }
+    }
 }
 
-.navbar-nav .nav-link:hover {
-    color: $blanco;
-    /* Color de los enlaces al pasar el ratón por encima */
-    text-decoration: none;
-    /* Asegúrate de que no haya subrayado */
+#navbarNav {
+    ul {
+        align-items: center;
+    }
 }
 
-#navbarNav ul {
-    align-items: center;
-}
-
-/* navbar - sin scrollear */
-
-.navbar-fixed img.navbar-logo {
-    display: none;
-}
-
-.navbar-fixed navbar-text {
-    display: none;
-}
-
-.navbar-fixed p {
-    display: none;
-}
 
 /* navbar - en scroll */
 

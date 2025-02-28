@@ -2,47 +2,42 @@
 @use 'variables' as *;
 
 .boton {
-        width: 100%;
-        padding: 12px;
-        font-size: 1.1rem;
-        background-color: $azul-oscuro;
-        color: $blanco;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    background-color: $azul-oscuro;
+    color: $blanco;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $azul;
     }
-
-.boton-yt img {
-    filter: $azul-oscuro-i;
 }
-
-//   // USO DE @EXTEND
 
 .boton-yt {
-@extend .boton;
-color: $azul-oscuro;
-background-color: $azul-claro;
-width: fit-content;
+    @extend .boton;
+    color: $azul-oscuro;
+    background-color: $azul-claro;
+    width: fit-content;
+
+    &:hover {
+        color: $azul-claro;
+        background-color: $azul-oscuro;
+
+        img {
+            filter: $azul-claro-i;
+        }
+    }
+
+    img {
+        filter: $azul-oscuro-i;
+    }
 }
 
-.btn-primary  {
-@extend .boton;
-background-color: $azul-oscuro;
-width:fit-content;
-}
-
-
-// ANIMACIONES
-
-.boton:hover {
-background-color: $azul;
-}
-
-.boton-yt:hover {
-    color: $azul-claro;
+.btn-primary {
+    @extend .boton;
     background-color: $azul-oscuro;
-}
-
-.boton-yt:hover img {
-    filter: $azul-claro-i;
+    width: fit-content;
 }

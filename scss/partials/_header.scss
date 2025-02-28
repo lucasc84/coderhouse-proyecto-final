@@ -15,34 +15,31 @@
     justify-content: space-between;
     padding: 3px;
     font-size: 14px;
-}
 
+    a {
+        @include banners;
+        margin-right: 10px;
 
+        &:hover,
+        &:active {
+            color: $blanco;
+        }
 
-.banner-top a {
-    @include banners;
-    margin-right: 10px;
-}
+        img {
+            @include link-azul(20px, 20px);
+            margin-right: 5px;
 
-.banner-top img {
-    @include link-azul(20px, 20px);
-    margin-right: 5px;
-}
+            &:hover,
+            &:active {
+                filter: $blanco-i;
+            }
+        }
+    }
 
-.social-icons img {
-    @include link-azul(20px, 20px);
-    margin-left: 10px; //ver biene xtructura variable del mixin, esto peude ser una variable del mixin, usar todos juntos y cambiar esto, lo mismo el temaño (o no pq es uno solo)
-}
-
-
-.banner-top a:hover,
-.banner-top a:active {
-    color: $blanco;
-}
-
-.banner-top a:hover img,
-.banner-top a:active img {
-    filter: $blanco-i;
+    .social-icons img {
+        @include link-azul(20px, 20px);
+        margin-left: 10px;
+    }
 }
 
 
