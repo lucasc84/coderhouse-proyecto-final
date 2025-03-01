@@ -12,6 +12,7 @@
     cursor: pointer;
 
     &:hover {
+        transition: background-color 1s ease;
         background-color: $azul;
     }
 }
@@ -23,10 +24,12 @@
     width: fit-content;
 
     &:hover {
+        transition: background-color 1s ease;
         color: $azul-claro;
         background-color: $azul-oscuro;
 
         img {
+            transition: filter 1s ease;
             filter: $azul-claro-i;
         }
     }

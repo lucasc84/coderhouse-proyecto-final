@@ -6,12 +6,23 @@
 
 /* A. Pie de página */
 
+
+
+/* Si el SVG está dentro de un contenedor, asegúrate de que el contenedor tampoco tenga márgenes o rellenos */
+
+
+
+footer svg {
+    margin-bottom: -5px; // Ajustá este valor si sigue quedando la línea
+}
+
 .copyright {
     p {
         text-align: right;
         font-style: italic;
         @include banners;
-        margin: 20px 0 0 0;
         font-size: 14px;
     }
 }
+
+

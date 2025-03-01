@@ -31,6 +31,7 @@
             }
 
             &:hover {
+                transition: background-color 1s ease;
                 background-color: $azul-oscuro;
             }
         }

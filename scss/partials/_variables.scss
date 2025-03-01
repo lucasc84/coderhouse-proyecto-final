@@ -9,6 +9,10 @@ $negro: #000000;
 $blanco-transparente: #FFFFFF1A;
 $negro-transparente: #00000080; // Negro con 50% de transparencia
 
+// GRADIENTES
+$azul-oscuro-g: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,12,137,1) 50%, rgba(9,9,117,1) 75%, rgba(0,212,255,1) 100%);
+
+
 // COLORES SVG
 $azul-i: brightness(0) saturate(100%) invert(19%) sepia(99%) saturate(2106%) hue-rotate(180deg) brightness(96%) contrast(102%);
 $azul-oscuro-i: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);

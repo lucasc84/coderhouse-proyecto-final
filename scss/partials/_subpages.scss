@@ -9,4 +9,10 @@
 .home {
     @include link-azul(30px, 30px);
     margin-left: 20px;
+    &:hover,
+    &:active {
+        transition: filter 1s ease;
+        filter: $blanco-i;
+    }
+
 }

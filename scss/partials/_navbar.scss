@@ -29,6 +29,7 @@
         .nav-link {
             color: $azul-oscuro;
             &:hover {
+                transition: color 1s ease;
                 color: $blanco;
                 text-decoration: none;
             }
