@@ -54,3 +54,20 @@ $negro-i: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7485%) hue-
     filter: $blanco-i;
     text-decoration: none;
 }
+
+
+// KEYFRAMES
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

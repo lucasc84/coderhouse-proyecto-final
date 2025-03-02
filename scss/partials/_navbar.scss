@@ -36,6 +36,12 @@
         }
     }
 
+    .nav-contacto {
+
+    animation: blink 2s infinite;
+}
+
+
     &-fixed {
         img.navbar-logo,
         navbar-text,
@@ -48,6 +54,7 @@
 #navbarNav {
     ul {
         align-items: center;
+
     }
 }
 
