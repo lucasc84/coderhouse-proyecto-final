@@ -214,7 +214,7 @@ p {
 
 .contenedor-grid img {
   width: 80%;
-  height: 80%;
+  height: auto;
   align-self: center;
 }
 
@@ -224,6 +224,7 @@ p {
 
 .grid-titulo-1 {
   grid-area: titulo;
+  padding-bottom: 40px;
 }
 
 .grid-img-1 {
