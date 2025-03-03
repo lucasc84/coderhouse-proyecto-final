@@ -4,7 +4,7 @@
     opacity: 1;
   }
   50% {
-    opacity: 0.5;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
@@ -215,7 +215,6 @@ p {
 .contenedor-grid img {
   width: 80%;
   height: auto;
-  align-self: center;
 }
 
 .contenedor-grid p {
@@ -229,8 +228,8 @@ p {
 
 .grid-img-1 {
   grid-area: foto1;
-  justify-self: left;
-  align-self: self-start;
+  justify-self: start;
+  align-self: start;
 }
 
 .grid-texto-1 {
@@ -502,7 +501,7 @@ a.whatsapp-btn {
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 15px;
-    animation: blink 1s infinite;
+    animation: blink 2s infinite;
   }
   .navbar-text.scrolled {
     padding: 1px;

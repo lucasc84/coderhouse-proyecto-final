@@ -23,7 +23,6 @@
 .contenedor-grid img {
     width: 80%;
     height: auto;
-    align-self: center;
 }
 
 .contenedor-grid p {
@@ -39,8 +38,8 @@
 
 .grid-img-1 {
     grid-area: foto1;
-    justify-self: left;
-    align-self: self-start;
+    justify-self: start;
+    align-self: start;
 }
 
 .grid-texto-1 {
