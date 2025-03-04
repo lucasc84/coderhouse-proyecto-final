@@ -1,46 +1,50 @@
-// VARIABLES SIEMPRE PRIMERO
-@use 'variables' as *;
+ /* BOTONES */
 
-.boton {
-    width: 100%;
-    padding: 12px;
-    font-size: 1.1rem;
-    background-color: $azul-oscuro;
-    color: $blanco;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+ @use 'variables' as *;
 
-    &:hover {
-        transition: background-color 1s ease;
-        background-color: $azul;
-    }
-}
+ .boton {
+     width: 100%;
+     padding: 12px;
+     font-size: 1.1rem;
+     background-color: $azul-oscuro;
+     color: $blanco;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
 
-.boton-yt {
-    @extend .boton;
-    color: $azul-oscuro;
-    background-color: $azul-claro;
-    width: fit-content;
+     &:hover {
+         transition: background-color 1s ease;
+         background-color: $azul;
+     }
+ }
 
-    &:hover {
-        transition: background-color 1s ease;
-        color: $azul-claro;
-        background-color: $azul-oscuro;
+ // BOTONES - EXTEND
 
-        img {
-            transition: filter 1s ease;
-            filter: $azul-claro-i;
-        }
-    }
 
-    img {
-        filter: $azul-oscuro-i;
-    }
-}
+ .boton-yt {
+     @extend .boton;
+     color: $azul-oscuro;
+     background-color: $azul-claro;
+     width: fit-content;
 
-.btn-primary {
-    @extend .boton;
-    background-color: $azul-oscuro;
-    width: fit-content;
-}
+     &:hover {
+         transition: background-color 1s ease;
+         color: $azul-claro;
+         background-color: $azul-oscuro;
+
+         img {
+             transition: filter 1s ease;
+             filter: $azul-claro-i;
+         }
+     }
+
+     img {
+         filter: $azul-oscuro-i;
+     }
+ }
+
+ .btn-primary {
+     @extend .boton;
+     background-color: $azul-oscuro;
+     width: fit-content;
+ }

@@ -1,9 +1,6 @@
-/* II. NAVBAR: Menú de navegación (basado en bootstrap) */
-
-
-// VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
+/* NAVBAR: Menú de navegación (basado en bootstrap) */
 
 
 .navbar-titulo {
@@ -16,10 +13,9 @@
     padding-right: 10px;
     padding-left: 10px;
     border-radius: 15px;
-    /* border-radius: Redondea la esquina elegida del borde (en este caso todas pero podes asignarle top-left etc */
 }
 
-/* navbar - estilos en links */
+/* A. navbar - estilos en links */
 
 .navbar {
     @include banners;
@@ -59,8 +55,7 @@
 }
 
 
-/* navbar - en scroll */
-
+/* B. navbar - en scroll */
 
 .navbar-titulo.scrolled {
     display: none;

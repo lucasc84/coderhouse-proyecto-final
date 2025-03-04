@@ -1,14 +1,14 @@
-// VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
 
-/* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
+/* SUBPAGINAS (solo aplicable a ciertas subpaginas */
 
 /*  Boton de home para todas las subáginas menos index.html */
 
 .home {
     @include link-azul(30px, 30px);
     margin-left: 20px;
+
     &:hover,
     &:active {
         transition: filter 1s ease;

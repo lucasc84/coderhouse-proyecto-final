@@ -1,10 +1,8 @@
-// VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
+/* MEDIA QUERIES */
 
-
-/* 3.) MEDIA QUERIES */
-/* TELEFONO (hasta 500px) CAMBIARR ESTA EN 700 para probar en pc*/
+/* TELEFONO (hasta 500px) CAMBIAR ESTA EN 700 para probar en pc*/
 /* TABLET (hasta 992px) solo para el TP final*/
 
 @media (max-width: 500px) {
@@ -90,9 +88,7 @@ nav .navbar-logo.scrolled {
 
     .contenedor-grid img {
         width: 100%;
-        /* Ajusta el ancho al 100% del contenedor */
         height: auto;
-        /* Mantiene la proporción de la imagen */
         justify-self: center;
     }
 
@@ -181,17 +177,6 @@ nav .navbar-logo.scrolled {
         justify-self: center;
         text-align: center;
     }
-
-
-    // .btn.btn-primary {
-    //     background-color: #0C0C89;
-    //     display: inline-block;
-
-    // }
-
-    // .btn.btn-primary:hover {
-    //     background-color: #004a99;
-    // }
 
     .card img {
         width: 20px;

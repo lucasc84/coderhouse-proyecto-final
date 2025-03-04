@@ -1,11 +1,7 @@
-// VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
 
-
-/* II. SUBPAGINA DE CONTACTO */
-
-
+/* SUBPAGINA DE CONTACTO */
 
 /* A. formulario */
 
@@ -63,4 +59,3 @@ form.contacto textarea {
     margin-left: 15px;
     filter: $blanco-i;
 }
-

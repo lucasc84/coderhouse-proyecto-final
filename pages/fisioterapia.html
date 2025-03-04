@@ -2,153 +2,140 @@
 <!DOCTYPE html>
 <html lang="es">
 <!-- 2.) HEAD - METADATOS -->
-    <!-- El head contiene metadatos, enlaces a hojas de estilo, scripts y el título de la página -->
+<!-- El head contiene metadatos, enlaces a hojas de estilo, scripts y el título de la página -->
 
-    <head>
+<head>
+    <!-- 2.I. Charset -->
+    <meta charset="UTF-8">
+    <!-- El atributo charset especifica la codificación de caracteres para el documento HTML -->
+    <!-- UTF-8 es una codificación de caracteres Unicode que puede representar cualquier carácter en Unicode. Es compatible con todos los navegadores y sistemas operativos -->
 
-        <!-- I. Charset -->
+    <!-- 2.II. Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- la linea de viewport hace que una página web sea responsiva en dispositivos móviles. Ajusta el ancho de la ventana gráfica al ancho del dispositivo y establece el nivel de zoom inicial a 1.0, lo que generalmente proporciona una buena experiencia de usuario en dispositivos móviles -->
 
-        <meta charset="UTF-8">
-        <!-- El atributo charset especifica la codificación de caracteres para el documento HTML -->
-        <!-- UTF-8 es una codificación de caracteres Unicode que puede representar cualquier carácter en Unicode. Es compatible con todos los navegadores y sistemas operativos -->
+    <!-- 2.III. Title y Icon -->
+    <title>Poseidón - Escuela de Natación en La Plata</title>
+    <!-- Titulo a Mostar en la barra de pestañas del Navegador Web -->
 
-        <!-- II. Viewport -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- la linea de viewport hace que una página web sea responsiva en dispositivos móviles. Ajusta el ancho de la ventana gráfica al ancho del dispositivo y establece el nivel de zoom inicial a 1.0, lo que generalmente proporciona una buena experiencia de usuario en dispositivos móviles -->
+    <link rel="icon" href="img/logo.png">
+    <!-- Icono de la pestaña del navegador -->
 
-        <!-- III. Title y Icon -->
-        <title>Poseidón - Escuela de Natación en La Plata</title>
-        <!-- Titulo a Mostar en la barra de pestañas del Navegador Web -->
+    <!-- 2.IV. Páginas de Estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Enlace a la hoja de estilos de Bootstrap -->
 
-        <link rel="icon" href="img/logo.png">
-        <!-- Icono de la pestaña del navegador -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Enlace a AOS -->
 
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Hoja de estilos CSS -->
 
-        <!-- IV. Páginas de Estilos -->
+    <!-- El atributo href especifica la URL de la página a la que se vincula el recurso -->
+    <!-- El atributo rel especifica la relación entre el documento actual y el recurso vinculado -->
 
+    <!-- 2.V. Uso de fuentes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconexión a Google Fonts -->
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-        <!-- Enlace a la hoja de estilos de Bootstrap -->
-
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <!-- Enlace a AOS -->
-    
-
-        <link rel="stylesheet" href="../css/style.css">
-        <!-- Hoja de estilos CSS -->
-
-        <!-- El atributo href especifica la URL de la página a la que se vincula el recurso -->
-        <!-- El atributo rel especifica la relación entre el documento actual y el recurso vinculado -->
-
-        <!-- V. Uso de fuentes externas -->
-
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- Preconexión a Google Fonts -->
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-            rel="stylesheet">
-        <!-- Fuentes especificas de Google Fonts -->
-
-    </head>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Fuentes especificas de Google Fonts -->
+</head>
 
 
-    <!-- 3.) BODY - CUERPO DE LA PAGINA -->
-    <!-- El body contiene el contenido visible de la página web -->
+<!-- 3.) BODY - CUERPO DE LA PAGINA -->
+<!-- El body contiene el contenido visible de la página web -->
 
-    <body>
-        <!-- I. Encabezado -->
-        <!-- El header contiene el encabezado de la página, como el título y el logo -->
+<body>
+    <!-- 3.I. Encabezado -->
+    <!-- El header contiene el encabezado de la página, como el título y el logo -->
 
-        <header>
-            <!-- A. Banner de Encabezado (Contacto y Redes) -->
-
-
-            <div class="banner-top">
-                <div class="contact-info">
-                    <a href="tel:+548221444555"><img src="../img/tel.svg" alt="Teléfono"></a>
-                    <a class="contact-info-text" href="tel:+548221444555">+54 8 221 444555</a>
-                    <a href="mailto:poseidon-escuela@gmail.com"><img src="../img/mail.svg" alt="Correo"></a>
-                    <a class="contact-info-text" href="mailto:poseidon-escuela@gmail.com">poseidon-escuela@gmail.com</a>
-                </div>
-                <div class="social-icons">
-                    <a href="https://maps.app.goo.gl/DE5UtiToZ72RbC4j8" target="_blank"><img src="../img/map.svg"
-                            alt="Ubicación"></a>
-                    <a href="http://www.facebook.com/poseidonok" target="_blank"><img src="../img/f.svg"
-                            alt="Facebook"></a>
-                    <a href="http://www.instagram.com/poseok" target="_blank"><img src="../img/i.svg"
-                            alt="Instagram"></a>
-                    <a href="http://www.x.com/poseidon_ok" target="_blank"><img src="../img/x.svg" alt="X"></a>
-                </div>
+    <header>
+        <!-- 3.I.A. Banner de Encabezado (Contacto y Redes) -->
+        <div class="banner-top">
+            <div class="contact-info">
+                <a href="tel:+548221444555"><img src="../img/tel.svg" alt="Teléfono"></a>
+                <a class="contact-info-text" href="tel:+548221444555">+54 8 221 444555</a>
+                <a href="mailto:poseidon-escuela@gmail.com"><img src="../img/mail.svg" alt="Correo"></a>
+                <a class="contact-info-text" href="mailto:poseidon-escuela@gmail.com">poseidon-escuela@gmail.com</a>
             </div>
-
-            <!-- B. Banner Principal (Título y logo) -->
-            <div class="titulo-logo">
-                <div class="titulo">
-                    <h1>Poseidón</h1>
-                    <h2>Escuela de Natación Integral</h2>
-                </div>
-                <div class="logo">
-                    <img src="../img/logo.png" alt="Logo de Poseidón">
-                </div>
+            <div class="social-icons">
+                <a href="https://maps.app.goo.gl/DE5UtiToZ72RbC4j8" target="_blank"><img src="../img/map.svg"
+                        alt="Ubicación"></a>
+                <a href="http://www.facebook.com/poseidonok" target="_blank"><img src="../img/f.svg"
+                        alt="Facebook"></a>
+                <a href="http://www.instagram.com/poseok" target="_blank"><img src="../img/i.svg"
+                        alt="Instagram"></a>
+                <a href="http://www.x.com/poseidon_ok" target="_blank"><img src="../img/x.svg" alt="X"></a>
             </div>
+        </div>
 
-        </header>
-
-        <!-- II. NAVBAR - Menú de navegación (basado en bootstrap)-->
-
-        <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-fixed">
-            <div class="container">
-                <a class="navbar-titulo" href="#">SERVICIOS</a>
-                <a href="../index.html"><img class="home" src="../img/home.svg" alt="Inicio"></a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-titulo-movil">SERVICIOS</span>
-                </button>
-
-                <img src="../img/logo.png" alt="Logo" class="navbar-logo">
-                <p class="navbar-text">POSEIDÓN</p>
-
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="aquagym.html">Aquagym</a></li>
-                        <li class="nav-item"><a class="nav-link" href="bebes.html">Bebés</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ninos.html">Niños</a></li>
-                        <li class="nav-item"><a class="nav-link" href="adultos.html">Adultos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="fisioterapia.html">Fisioterapia</a></li>
-                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
-                        <li class="nav-contacto"><a class="nav-link" href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
+        <!-- 3.I.B. Banner Principal (Título y logo) -->
+        <div class="titulo-logo">
+            <div class="titulo">
+                <h1>Poseidón</h1>
+                <h2>Escuela de Natación Integral</h2>
             </div>
-        </nav>
-
-
-        <!-- III. MAIN - Contenido principal -->
-        <!-- El elemento <main> define el contenido principal de la página -->
-            <main data-aos="fade-right">
-                            <h3>FISIOTERAPIA ACUÁTICA</h3>
-            <!-- A. Título de la sección -->
-
-            <div class="main">
-                <!-- B. Imagen principal de la page -->
-
-                <img src="../img/fisioterapia.png" alt="Logo Principal" width=100% height="auto">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo de Poseidón">
             </div>
+        </div>
 
-            <!--C.  Descripción -->
-            <div>
-                <p>El agua es tu mejor aliada para la rehabilitación. Nuestras sesiones de fisioterapia acuática están
-                    pensadas para quienes necesitan aliviar dolores, mejorar la movilidad o recuperarse de lesiones. Con
-                    la ayuda de profesionales especializados, utilizamos técnicas adaptadas a cada necesidad,
-                    aprovechando las propiedades del agua para garantizar una recuperación cómoda y efectiva.</p>
-        </main>
+    </header>
 
-    <!-- D. Contenedor Grid -->
+    <!-- 3.II. NAVBAR - Menú de navegación (basado en bootstrap)-->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top navbar-fixed">
+        <div class="container">
+            <a class="navbar-titulo" href="#">SERVICIOS</a>
+            <a href="../index.html"><img class="home" src="../img/home.svg" alt="Inicio"></a>
 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-titulo-movil">SERVICIOS</span>
+            </button>
+
+            <img src="../img/logo.png" alt="Logo" class="navbar-logo">
+            <p class="navbar-text">POSEIDÓN</p>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="aquagym.html">Aquagym</a></li>
+                    <li class="nav-item"><a class="nav-link" href="bebes.html">Bebés</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ninos.html">Niños</a></li>
+                    <li class="nav-item"><a class="nav-link" href="adultos.html">Adultos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="fisioterapia.html">Fisioterapia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-contacto"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- 3.III. MAIN - Contenido principal -->
+    <!-- El elemento <main> define el contenido principal de la página -->
+    <main data-aos="fade-right">
+        <h3>FISIOTERAPIA ACUÁTICA</h3>
+        <!-- 3.III.A. Título de la sección -->
+
+        <div class="main">
+            <!-- 3.III.B. Imagen principal de la page -->
+            <img src="../img/fisioterapia.png" alt="Logo Principal" width=100% height="auto">
+        </div>
+
+        <!--3.III.C.  Descripción -->
+        <div>
+            <p>El agua es tu mejor aliada para la rehabilitación. Nuestras sesiones de fisioterapia acuática están
+                pensadas para quienes necesitan aliviar dolores, mejorar la movilidad o recuperarse de lesiones. Con
+                la ayuda de profesionales especializados, utilizamos técnicas adaptadas a cada necesidad,
+                aprovechando las propiedades del agua para garantizar una recuperación cómoda y efectiva.</p>
+    </main>
+
+    <!-- 3.III.D. Contenedor Grid -->
     <div class="contenedor-grid">
         <h3 class="grid-titulo-1">¿QUERÉS SABER MÁS?</h3>
         <p class="grid-texto-1"><span style="font-weight: bold;">Recuperación efectiva con menor impacto:</span>
@@ -161,11 +148,6 @@
         <img class="grid-img-2" src="../img/fisioterapia-g2.jpg" alt="2">
         <img class="grid-img-3" src="../img/fisioterapia-g3.jpg" alt="3">
     </div>
-
-
-
-
-
 
     <!-- IV. FOOTER - Pie de Página -->
     <footer>

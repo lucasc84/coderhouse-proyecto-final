@@ -1,9 +1,8 @@
-// VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
 
 
-/* B. Scripts */
+/* SCRIPTS */
 
 .whatsapp-btn {
     color: $blanco;
@@ -22,8 +21,5 @@ a.whatsapp-btn {
     bottom: 8%;
     filter: $blanco-i;
     display: block;
-    /* Asegura que la imagen se muestre como un bloque */
     border-radius: 50%;
-    /* Animación de respiración */
 }
-

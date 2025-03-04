@@ -1,19 +1,11 @@
-// VARIABLES SIEMPRE PRIMERO
 @use 'variables' as *;
 
-
-/* IV. FOOTER - Pie de página y scripts */
+/* FOOTER - Pie de página y scripts */
 
 /* A. Pie de página */
 
-
-
-/* Si el SVG está dentro de un contenedor, asegúrate de que el contenedor tampoco tenga márgenes o rellenos */
-
-
-
 footer svg {
-    margin-bottom: -5px; // Ajustá este valor si sigue quedando la línea
+    margin-bottom: -5px;
 }
 
 .copyright {
@@ -24,5 +16,3 @@ footer svg {
         font-size: 14px;
     }
 }
-
-

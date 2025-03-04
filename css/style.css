@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* VARIABLES */
 @keyframes blink {
   0% {
     opacity: 1;
@@ -10,12 +11,16 @@
     opacity: 1;
   }
 }
+/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas
+
+/* Reset CSS */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* BODY - Configuración general */
 body {
   background-color: #006290;
   display: flex;
@@ -25,7 +30,7 @@ body {
   color: #ffffff;
 }
 
-/* I. HEADER */
+/* HEADER */
 /* A. Banner de Encabezado - Contacto y Redes  */
 .banner-top {
   color: #0C0C89;
@@ -87,7 +92,7 @@ body {
   text-decoration: none;
 }
 
-/* II. NAVBAR: Menú de navegación (basado en bootstrap) */
+/* NAVBAR: Menú de navegación (basado en bootstrap) */
 .navbar-titulo {
   color: #0C0C89;
   text-decoration: none;
@@ -98,10 +103,9 @@ body {
   padding-right: 10px;
   padding-left: 10px;
   border-radius: 15px;
-  /* border-radius: Redondea la esquina elegida del borde (en este caso todas pero podes asignarle top-left etc */
 }
 
-/* navbar - estilos en links */
+/* A. navbar - estilos en links */
 .navbar {
   color: #0C0C89;
   background-color: #ADD8E6;
@@ -129,7 +133,7 @@ body {
   align-items: center;
 }
 
-/* navbar - en scroll */
+/* B. navbar - en scroll */
 .navbar-titulo.scrolled {
   display: none;
 }
@@ -159,8 +163,7 @@ nav .navbar-logo.scrolled {
   margin: 0 auto;
 }
 
-/* III. MAIN - Contenido principal de la página */
-/* A. Elementos en general */
+/* MAIN - Contenido principal de la página */
 h3 {
   color: #83E2E2;
   margin-top: 20px;
@@ -179,7 +182,7 @@ p {
   text-align: justify;
 }
 
-/* B. Cita */
+/* CITA EN INDEX */
 .cita {
   margin: 0 0 10px 50px;
   padding: 3px 25px;
@@ -200,77 +203,7 @@ p {
   margin-bottom: 2px;
 }
 
-/* C. Contenedor Grid*/
-.contenedor-grid {
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 80px 100px repeat(2, 250px);
-  padding-top: 50px;
-  grid-template-areas: "titulo titulo titulo" "foto1 texto1 texto1" "foto1 foto2 foto2" "texto2 foto3 texto3";
-  justify-content: center;
-  align-items: center;
-  justify-items: center;
-}
-
-.contenedor-grid img {
-  width: 80%;
-  height: auto;
-}
-
-.contenedor-grid p {
-  font-size: 18px;
-}
-
-.grid-titulo-1 {
-  grid-area: titulo;
-  padding-bottom: 40px;
-}
-
-.grid-img-1 {
-  grid-area: foto1;
-  justify-self: start;
-  align-self: start;
-}
-
-.grid-texto-1 {
-  grid-area: texto1;
-}
-
-.grid-img-3 {
-  grid-area: foto2;
-  justify-self: right;
-}
-
-.grid-texto-2 {
-  grid-area: texto2;
-}
-
-.grid-img-2 {
-  grid-area: foto3;
-  align-self: self-end;
-}
-
-.grid-texto-3 {
-  grid-area: texto3;
-}
-
-/* IV. FOOTER - Pie de página y scripts */
-/* A. Pie de página */
-/* Si el SVG está dentro de un contenedor, asegúrate de que el contenedor tampoco tenga márgenes o rellenos */
-footer svg {
-  margin-bottom: -5px;
-}
-
-.copyright p {
-  text-align: right;
-  font-style: italic;
-  color: #0C0C89;
-  background-color: #ADD8E6;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-/* 2.) SUBPAGINAS (solo aplicable a ciertas subpaginas */
+/* SUBPAGINAS (solo aplicable a ciertas subpaginas */
 /*  Boton de home para todas las subáginas menos index.html */
 .home {
   width: 30px;
@@ -285,7 +218,7 @@ footer svg {
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
-/* I. SUBPAGINA NOSOTROS */
+/* SUBPAGINA NOSOTROS */
 /* A. Ejemplos de inserción multimedia relativa y externa */
 .multimedia {
   text-align: right;
@@ -343,7 +276,7 @@ footer svg {
   margin: 0 auto;
 }
 
-/* II. SUBPAGINA DE CONTACTO */
+/* SUBPAGINA DE CONTACTO */
 /* A. formulario */
 form.contacto {
   width: 90%;
@@ -397,6 +330,61 @@ form.contacto textarea {
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
+/* GRID CONTAINER */
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: 80px 100px repeat(2, 250px);
+  padding-top: 50px;
+  grid-template-areas: "titulo titulo titulo" "foto1 texto1 texto1" "foto1 foto2 foto2" "texto2 foto3 texto3";
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.contenedor-grid img {
+  width: 80%;
+  height: auto;
+}
+
+.contenedor-grid p {
+  font-size: 18px;
+}
+
+.grid-titulo-1 {
+  grid-area: titulo;
+  padding-bottom: 40px;
+}
+
+.grid-img-1 {
+  grid-area: foto1;
+  justify-self: start;
+  align-self: start;
+}
+
+.grid-texto-1 {
+  grid-area: texto1;
+}
+
+.grid-img-3 {
+  grid-area: foto2;
+  justify-self: right;
+}
+
+.grid-texto-2 {
+  grid-area: texto2;
+}
+
+.grid-img-2 {
+  grid-area: foto3;
+  align-self: self-end;
+}
+
+.grid-texto-3 {
+  grid-area: texto3;
+}
+
+/* BOTONES */
 .boton, .btn-primary, .boton-yt {
   width: 100%;
   padding: 12px;
@@ -437,7 +425,22 @@ form.contacto textarea {
   width: fit-content;
 }
 
-/* B. Scripts */
+/* FOOTER - Pie de página y scripts */
+/* A. Pie de página */
+footer svg {
+  margin-bottom: -5px;
+}
+
+.copyright p {
+  text-align: right;
+  font-style: italic;
+  color: #0C0C89;
+  background-color: #ADD8E6;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* SCRIPTS */
 .whatsapp-btn {
   color: #ffffff;
   text-decoration: none;
@@ -455,13 +458,11 @@ a.whatsapp-btn {
   bottom: 8%;
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   display: block;
-  /* Asegura que la imagen se muestre como un bloque */
   border-radius: 50%;
-  /* Animación de respiración */
 }
 
-/* 3.) MEDIA QUERIES */
-/* TELEFONO (hasta 500px) CAMBIARR ESTA EN 700 para probar en pc*/
+/* MEDIA QUERIES */
+/* TELEFONO (hasta 500px) CAMBIAR ESTA EN 700 para probar en pc*/
 /* TABLET (hasta 992px) solo para el TP final*/
 @media (max-width: 500px) {
   /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
@@ -521,9 +522,7 @@ a.whatsapp-btn {
   }
   .contenedor-grid img {
     width: 100%;
-    /* Ajusta el ancho al 100% del contenedor */
     height: auto;
-    /* Mantiene la proporción de la imagen */
     justify-self: center;
   }
   .contenedor-grid p {
