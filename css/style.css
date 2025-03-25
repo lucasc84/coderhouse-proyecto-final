@@ -462,16 +462,8 @@ a.whatsapp-btn {
 }
 
 /* MEDIA QUERIES */
-/* TELEFONO (hasta 500px) CAMBIAR ESTA EN 700 para probar en pc*/
-/* TABLET (hasta 992px) solo para el TP final*/
-@media (max-width: 500px) {
-  /* Esta parte  (max-width: 500px) es solo porque el navbar de bootstap viene con un tercer tamaño mediano (tablet) que da un tercer formato, entonces hice ésto para simplificarlo para la entrega, en la que se requieren solo dos tamaños*/
-  nav .navbar-logo.scrolled {
-    display: none;
-  }
-}
-/* TAMAÑO PEQUEÑO (SERÍA MOBILE) para segunda entrega*/
-@media (max-width: 992px) {
+/* TAMAÑO MEDIANO (TABLET) hasta 992px*/
+@media (min-width: 501px) and (max-width: 992px) {
   .contact-info-text {
     display: none;
   }
@@ -486,6 +478,69 @@ a.whatsapp-btn {
   }
   .titulo-logo img[src*="logo.png"] {
     width: 120px;
+    height: auto;
+  }
+  .navbar-titulo {
+    display: none;
+  }
+  .navbar-titulo-movil {
+    color: #0C0C89;
+    text-decoration: none;
+    background-color: #83E2E2;
+    font-weight: bold;
+    font-size: 16px;
+    border: 1px solid #0C0C89;
+    padding: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    animation: blink 2s infinite;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .navbar-text.scrolled {
+    padding: 1px;
+    font-size: 20px;
+  }
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .navbar-nav .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .navbar-nav .nav-item:last-child {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+/* MEDIA QUERIES */
+/* TAMAÑO PEQUEÑO (MOBILE) hasta 500px*/
+@media (max-width: 500px) {
+  .contact-info-text {
+    display: none;
+  }
+  h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .titulo-logo {
+    padding: 10px;
+  }
+  .titulo-logo img {
+    width: 100px;
     height: auto;
   }
   .navbar-titulo {

@@ -1,0 +1,79 @@
+@use 'variables' as *;
+
+/* MEDIA QUERIES */
+
+/* TAMAÑO MEDIANO (TABLET) hasta 992px*/
+
+@media (min-width: 501px) and (max-width: 992px) {
+
+    .contact-info-text {
+        display: none;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    .titulo-logo {
+        padding: 10px;
+    }
+
+    .titulo-logo img[src*="logo.png"] {
+        width: 120px;
+        height: auto;
+    }
+
+    .navbar-titulo {
+        display: none;
+    }
+
+    .navbar-titulo-movil {
+        color: $azul-oscuro;
+        text-decoration: none;
+        background-color: $azul-fuerte;
+        font-weight: bold;
+        font-size: 16px;
+        border: 1px solid $azul-oscuro;
+        padding: 1px;
+        padding-right: 10px;
+        padding-left: 10px;
+        border-radius: 15px;
+        animation: blink 2s infinite;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+    }
+
+    .navbar-text.scrolled {
+        padding: 1px;
+        font-size: 20px;
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .navbar-nav .nav-item:last-child {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
