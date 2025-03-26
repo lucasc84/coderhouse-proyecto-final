@@ -313,6 +313,14 @@ form.contacto textarea {
   background-color: #ADD8E6;
 }
 
+.mapa-ubicacion {
+  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  height: 370px; /* Altura fija */
+  border: none; /* Elimina el borde */
+  margin: 0; /* Elimina márgenes */
+  overflow: hidden; /* Evita el scroll interno */
+}
+
 /* C. BOOTSTRAP - Cards */
 .card {
   margin: 20px auto;
@@ -522,6 +530,49 @@ a.whatsapp-btn {
   .navbar-nav .nav-item:last-child {
     margin-left: 10px;
     margin-right: 10px;
+  }
+  /* CONTENEDOR GRID*/
+  .contenedor-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-top: 50px;
+    grid-template-areas: "titulo" "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
+  }
+  .contenedor-grid img {
+    width: 100%;
+    height: auto;
+    justify-self: center;
+  }
+  .contenedor-grid p {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .grid-titulo-1 {
+    grid-area: titulo;
+  }
+  .grid-img-1 {
+    grid-area: foto1;
+  }
+  .grid-img-2 {
+    grid-area: foto3;
+  }
+  .grid-img-3 {
+    grid-area: foto2;
+  }
+  .grid-texto-1 {
+    grid-area: texto1;
+  }
+  .grid-texto-2 {
+    grid-area: texto2;
+  }
+  .grid-texto-3 {
+    grid-area: texto3;
+  }
+  .copyright p {
+    font-size: 12px;
+    text-align: center;
   }
 }
 /* MEDIA QUERIES */

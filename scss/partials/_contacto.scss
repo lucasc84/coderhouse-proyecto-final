@@ -41,6 +41,14 @@ form.contacto textarea {
     background-color: $azul-claro;
 }
 
+.mapa-ubicacion {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    height: 370px; /* Altura fija */
+    border: none; /* Elimina el borde */
+    margin: 0; /* Elimina márgenes */
+    overflow: hidden; /* Evita el scroll interno */
+}
+
 /* C. BOOTSTRAP - Cards */
 
 .card {
