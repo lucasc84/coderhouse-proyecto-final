@@ -11,8 +11,7 @@
     opacity: 1;
   }
 }
-/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas
-
+/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas*/
 /* Reset CSS */
 * {
   margin: 0;
@@ -20,11 +19,18 @@
   box-sizing: border-box;
 }
 
+/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas*/
+html {
+  font-size: 16px;
+}
+
 /* BODY - Configuración general */
 body {
+  font-size: 1rem;
   background-color: #006290;
   display: flex;
   flex-direction: column;
+  margin: 0;
   padding: 1em;
   font-family: "Ubuntu", serif;
   color: #ffffff;
@@ -41,38 +47,38 @@ body {
   align-items: center;
   font-weight: bold;
   justify-content: space-between;
-  padding: 3px;
-  font-size: 14px;
+  padding: 0.1875em;
+  font-size: 0.875rem;
 }
 .banner-top a {
   color: #0C0C89;
   background-color: #ADD8E6;
   text-decoration: none;
-  margin-right: 10px;
+  margin-right: 0.625em;
 }
 .banner-top a:hover, .banner-top a:active {
   transition: color 1s ease;
   color: #ffffff;
 }
 .banner-top a img {
-  width: 20px;
-  height: 20px;
+  width: 1.25em;
+  height: 1.25em;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
-  margin-right: 5px;
+  margin-right: 0.3125em;
 }
 .banner-top a img:hover, .banner-top a img:active {
   transition: filter 1s ease;
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 .banner-top .social-icons img {
-  width: 20px;
-  height: 20px;
+  width: 1.25em;
+  height: 1.25em;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
-  margin-left: 10px;
+  margin-left: 0.625em;
 }
 
 /* B. Banner Principal - Título y logo */
@@ -81,18 +87,18 @@ body {
   display: flex;
   text-transform: uppercase;
   justify-content: space-between;
-  padding: 20px;
+  padding: 1.25em;
   align-items: center;
 }
 .titulo-logo img {
-  width: 180px;
+  width: 11.25em;
   height: auto;
   color: #ffffff;
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   text-decoration: none;
 }
 .titulo-logo p {
-  font-size: 36px;
+  font-size: 2.25rem;
   margin: 0;
 }
 
@@ -102,11 +108,9 @@ body {
   text-decoration: none;
   background-color: #83E2E2;
   font-weight: bold;
-  border: 1px solid #0C0C89;
-  padding: 3px;
-  padding-right: 10px;
-  padding-left: 10px;
-  border-radius: 15px;
+  border: 0.0625em solid #0C0C89;
+  padding: 0.1875em 0.625em;
+  border-radius: 0.9375em;
 }
 
 /* A. navbar - estilos en links */
@@ -114,7 +118,7 @@ body {
   color: #0C0C89;
   background-color: #ADD8E6;
   text-decoration: none;
-  padding: 1px;
+  padding: 0 1rem;
 }
 .navbar-nav .nav-link {
   color: #0C0C89;
@@ -150,13 +154,13 @@ nav .navbar-logo.scrolled {
   text-decoration: none;
   display: block;
   max-height: 100%;
-  padding-left: 20px;
+  padding-left: 1.25em;
 }
 
 .navbar-text.scrolled {
   display: block;
-  margin: 0 10px;
-  font-size: 26px;
+  margin: 0 0.625em;
+  font-size: 1.625rem;
   font-weight: bold;
   color: #0C0C89;
 }
@@ -170,52 +174,52 @@ nav .navbar-logo.scrolled {
 /* MAIN - Contenido principal de la página */
 h1, h2 {
   color: #83E2E2;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 28px;
-  -webkit-text-stroke: 1px #0C0C89;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
+  font-size: 2rem;
+  -webkit-text-stroke: 0.0625em #0C0C89;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1.25em;
   text-align: justify;
 }
 
 /* CITA EN INDEX */
 .cita {
-  margin: 0 0 10px 50px;
-  padding: 3px 25px;
+  margin: 0 0 0.625em 3.125em;
+  padding: 0.1875em 1.5625em;
   font-style: italic;
   text-align: right;
   color: #83E2E2;
-  border-left: 4px solid #83E2E2;
-  border-right: 4px solid #83E2E2;
+  border-left: 0.25em solid #83E2E2;
+  border-right: 0.25em solid #83E2E2;
   background-color: rgba(255, 255, 255, 0.1019607843);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5019607843);
-  font-size: 16px;
+  box-shadow: 0 0.25em 0.5em rgba(0, 0, 0, 0.5019607843);
+  font-size: 1em;
 }
 .cita #leonardo {
-  font-size: 16px;
+  font-size: 1em;
   text-align: right;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 2px;
+  margin-bottom: 0.125em;
 }
 
 /* SUBPAGINAS (solo aplicable a ciertas subpaginas */
 /*  Boton de home para todas las subáginas menos index.html */
 .home {
-  width: 30px;
-  height: 30px;
+  width: 1.875em;
+  height: 1.875em;
   color: #0C0C89;
   filter: brightness(0) saturate(100%) invert(8%) sepia(66%) saturate(4673%) hue-rotate(233deg) brightness(123%) contrast(106%);
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 1.25em;
 }
 .home:hover, .home:active {
   transition: filter 1s ease;
@@ -231,18 +235,17 @@ p {
   text-align: right;
 }
 .multimedia .musica {
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 .multimedia .musica audio {
   width: 100%;
-  max-width: 500px;
+  max-width: 31.25em;
   margin: 0 auto;
-  padding: 12px;
+  padding: 0.75em;
   font-size: 1.1rem;
-  border-radius: 4px;
+  border-radius: 0.25em;
   cursor: pointer;
   background-color: #ADD8E6;
-  /* Estilos adicionales */
 }
 .multimedia .musica audio::-webkit-media-controls-panel {
   background-color: #ADD8E6;
@@ -252,29 +255,29 @@ p {
   background-color: #0C0C89;
 }
 .multimedia .video {
-  margin-top: 20px;
+  margin-top: 1.25em;
 }
 
 /* B. BOOTSTRAP - Carrousel */
 .carousel-caption {
-  max-width: 480px;
+  max-width: 30em;
   width: 100%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0.625em;
   background-color: rgba(0, 0, 0, 0.5019607843);
-  border-radius: 8px;
+  border-radius: 0.5em;
   box-sizing: border-box;
 }
 .carousel-caption h4 img {
-  width: 30px;
+  width: 1.875em;
   height: auto;
-  margin-right: 5px;
+  margin-right: 0.3125em;
   vertical-align: middle;
 }
 
 .carousel-inner img {
-  max-width: 500px;
-  max-height: 500px;
+  max-width: 31.25em;
+  max-height: 31.25em;
   width: 100%;
   height: auto;
   margin: 0 auto;
@@ -285,15 +288,15 @@ p {
 form.contacto {
   width: 90%;
   color: #0C0C89;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
+  margin: 1.25em auto;
+  padding: 1.25em;
+  border-radius: 0.5em;
   background-color: #ADD8E6;
 }
 
 form.contacto label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 0.3125em;
   font-size: 1.1rem;
   color: #000000;
 }
@@ -301,25 +304,25 @@ form.contacto label {
 form.contacto input,
 form.contacto textarea {
   width: 100%;
-  padding: 10px;
+  padding: 0.625em;
   font-size: 1rem;
-  border: 1px solid #ffffff;
-  border-radius: 4px;
+  border: 0.0625em solid #ffffff;
+  border-radius: 0.25em;
 }
 
 /* B. Mapa insertado */
 #mapa {
   width: 48%;
   color: #0C0C89;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
+  margin: 1.25em auto;
+  padding: 1.25em;
+  border-radius: 0.5em;
   background-color: #ADD8E6;
 }
 
 .mapa-ubicacion {
   width: 100%; /* Ocupa el 100% del ancho del contenedor */
-  height: 370px; /* Altura fija */
+  height: 23.125em;
   border: none; /* Elimina el borde */
   margin: 0; /* Elimina márgenes */
   overflow: hidden; /* Evita el scroll interno */
@@ -327,18 +330,18 @@ form.contacto textarea {
 
 /* C. BOOTSTRAP - Cards */
 .card {
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
+  margin: 1.25em auto;
+  padding: 1.25em;
+  border-radius: 0.5em;
   color: #0C0C89;
   background-color: #ADD8E6;
 }
 
 .card img {
-  width: 20px;
-  height: 20px;
-  margin-right: 15px;
-  margin-left: 15px;
+  width: 1.25em;
+  height: 1.25em;
+  margin-right: 0.9375em;
+  margin-left: 0.9375em;
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
@@ -346,8 +349,8 @@ form.contacto textarea {
 .contenedor-grid {
   display: grid;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 80px 100px repeat(2, 250px);
-  padding-top: 50px;
+  grid-template-rows: 5em 6.25em repeat(2, 15.625em);
+  padding-top: 3.125em;
   grid-template-areas: "titulo titulo titulo" "foto1 texto1 texto1" "foto1 foto2 foto2" "texto2 foto3 texto3";
   justify-content: center;
   align-items: center;
@@ -360,12 +363,12 @@ form.contacto textarea {
 }
 
 .contenedor-grid p {
-  font-size: 18px;
+  font-size: 1.125em;
 }
 
 .grid-titulo-1 {
   grid-area: titulo;
-  padding-bottom: 40px;
+  padding-bottom: 2.5em;
 }
 
 .grid-img-1 {
@@ -399,12 +402,12 @@ form.contacto textarea {
 /* BOTONES */
 .boton, .btn-primary, .boton-yt {
   width: 100%;
-  padding: 12px;
+  padding: 0.5em 1em;
   font-size: 1.1rem;
   background-color: #0C0C89;
   color: #ffffff;
   border: none;
-  border-radius: 4px;
+  border-radius: 0.25em;
   cursor: pointer;
 }
 .boton:hover, .btn-primary:hover, .boton-yt:hover {
@@ -440,7 +443,7 @@ form.contacto textarea {
 /* FOOTER - Pie de página y scripts */
 /* A. Pie de página */
 footer svg {
-  margin-bottom: -5px;
+  margin-bottom: -0.3125em;
 }
 
 .copyright p {
@@ -449,7 +452,7 @@ footer svg {
   color: #0C0C89;
   background-color: #ADD8E6;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 /* SCRIPTS */
@@ -463,8 +466,8 @@ a.whatsapp-btn {
 }
 
 .scrollup img {
-  width: 50px;
-  height: 50px;
+  width: 3.125em;
+  height: 3.125em;
   position: fixed;
   right: 2%;
   bottom: 8%;
@@ -480,14 +483,14 @@ a.whatsapp-btn {
     display: none;
   }
   .titulo-logo {
-    padding: 10px;
+    padding: 0.625em;
   }
   .titulo-logo img {
-    width: 120px;
+    width: 7.5em;
     height: auto;
   }
   .titulo-logo p {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin: 0;
   }
   .navbar-titulo {
@@ -498,12 +501,10 @@ a.whatsapp-btn {
     text-decoration: none;
     background-color: #83E2E2;
     font-weight: bold;
-    font-size: 16px;
-    border: 1px solid #0C0C89;
-    padding: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 15px;
+    font-size: 1rem;
+    border: 0.0625em solid #0C0C89;
+    padding: 0.0625em 0.625em;
+    border-radius: 0.9375em;
     animation: blink 2s infinite;
     flex-direction: row;
     align-items: center;
@@ -511,8 +512,8 @@ a.whatsapp-btn {
     width: auto;
   }
   .navbar-text.scrolled {
-    padding: 1px;
-    font-size: 20px;
+    padding: 0.0625em;
+    font-size: 1.25rem;
   }
   .navbar-toggler:focus,
   .navbar-toggler:active {
@@ -526,19 +527,18 @@ a.whatsapp-btn {
     width: 100%;
   }
   .navbar-nav .nav-item {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
   }
   .navbar-nav .nav-item:last-child {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0.625em;
+    margin-right: 0.625em;
   }
-  /* CONTENEDOR GRID*/
   .contenedor-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-top: 50px;
+    padding-top: 3.125em;
     grid-template-areas: "titulo" "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
   }
   .contenedor-grid img {
@@ -547,9 +547,9 @@ a.whatsapp-btn {
     justify-self: center;
   }
   .contenedor-grid p {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 1.125rem;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
   .grid-titulo-1 {
     grid-area: titulo;
@@ -573,49 +573,48 @@ a.whatsapp-btn {
     grid-area: texto3;
   }
   .copyright p {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
   }
-  /* PAGINA NOSOTROS */
   .carousel-caption {
-    max-height: 190px;
+    max-height: 11.875em;
   }
   .carousel-item h4 {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .carousel-item p {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .carousel-caption {
     max-width: 50%;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0.625em;
     background-color: rgba(0, 0, 0, 0.5019607843);
-    border-radius: 8px;
+    border-radius: 0.5em;
     box-sizing: border-box;
   }
 }
 /* MEDIA QUERIES */
 /* TAMAÑO PEQUEÑO (MOBILE) hasta 500px*/
-@media (max-width: 500px) {
+@media (max-width: 31.25em) {
   .contact-info-text {
     display: none;
   }
   .titulo-logo {
-    padding: 10px;
+    padding: 0.625em;
     flex-direction: row;
     text-align: center;
   }
   .titulo-logo img {
-    width: 80px;
+    width: 5em;
     height: auto;
-    margin-left: 10px;
+    margin-left: 0.625em;
   }
   .titulo-logo p {
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
-    padding-top: 5px;
+    padding-top: 0.3125em;
   }
   .navbar-titulo {
     display: none;
@@ -625,28 +624,25 @@ a.whatsapp-btn {
     text-decoration: none;
     background-color: #83E2E2;
     font-weight: bold;
-    font-size: 16px;
-    border: 1px solid #0C0C89;
-    padding: 1px;
-    padding-right: 10px;
-    padding-left: 10px;
-    border-radius: 15px;
+    font-size: 1rem;
+    border: 0.0625em solid #0C0C89;
+    padding: 0.0625em 0.625em;
+    border-radius: 0.9375em;
     animation: blink 2s infinite;
   }
   .navbar-text.scrolled {
-    padding: 1px;
-    font-size: 20px;
+    padding: 0.0625em;
+    font-size: 1.25rem;
   }
   .navbar-toggler:focus,
   .navbar-toggler:active {
     outline: none;
   }
-  /* CONTENEDOR GRID*/
   .contenedor-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    padding-top: 50px;
+    padding-top: 3.125em;
     grid-template-areas: "titulo" "foto1" "texto1" "foto2" "texto2" "foto3" "texto3";
   }
   .contenedor-grid img {
@@ -655,9 +651,9 @@ a.whatsapp-btn {
     justify-self: center;
   }
   .contenedor-grid p {
-    font-size: 18px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-size: 1.125rem;
+    margin-top: 1.25em;
+    margin-bottom: 1.25em;
   }
   .grid-titulo-1 {
     grid-area: titulo;
@@ -681,10 +677,9 @@ a.whatsapp-btn {
     grid-area: texto3;
   }
   .copyright p {
-    font-size: 12px;
+    font-size: 0.75rem;
     text-align: center;
   }
-  /* PAGINA CONTACTO */
   form.contacto label {
     display: block;
     font-size: 0.8rem;
@@ -696,7 +691,7 @@ a.whatsapp-btn {
     text-align: center;
   }
   form.contacto button {
-    padding: 5px;
+    padding: 0.3125em;
     font-size: 0.8rem;
   }
   #mapa {
@@ -708,9 +703,9 @@ a.whatsapp-btn {
     text-align: center;
   }
   .card {
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
+    margin: 1.25em auto;
+    padding: 1.25em;
+    border-radius: 0.5em;
     color: #0C0C89;
     background-color: #ADD8E6;
     text-align: center;
@@ -721,21 +716,20 @@ a.whatsapp-btn {
     text-align: center;
   }
   .card img {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-    margin-left: 15px;
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: 0.9375em;
+    margin-left: 0.9375em;
     filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   }
-  /* PAGINA NOSOTROS */
   .carousel-caption {
-    max-height: 190px;
+    max-height: 11.875em;
   }
   .carousel-item h4 {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
   .carousel-item p {
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .main-nosotros,
   .main-nosotros p {
@@ -749,9 +743,9 @@ a.whatsapp-btn {
     max-width: 70%;
     width: 100%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 0.625em;
     background-color: rgba(0, 0, 0, 0.5019607843);
-    border-radius: 8px;
+    border-radius: 0.5em;
     box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */

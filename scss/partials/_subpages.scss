@@ -6,8 +6,9 @@
 /*  Boton de home para todas las subáginas menos index.html */
 
 .home {
-    @include link-azul(30px, 30px);
-    margin-left: 20px;
+    @include link-azul(1.875em, 1.875em);
+    margin-left: 1.25em;
+
 
     &:hover,
     &:active {

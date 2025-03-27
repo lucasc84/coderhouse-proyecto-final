@@ -1,5 +1,10 @@
  /* VARIABLES */
 
+ // MEDIDAS
+
+ $font-size-base: 1rem; // 16px
+ $spacing-unit: 1.5rem; // 24px 
+ $container-width: 90%;  
 
  // COLORES TEXTO Y BACKGROUND
 
@@ -34,7 +39,7 @@
      text-decoration: none;
  }
 
-  // E. MIXIN VARIABLE
+ // E. MIXIN VARIABLE
 
  @mixin link-azul($var1, $var2) {
      width: $var1;

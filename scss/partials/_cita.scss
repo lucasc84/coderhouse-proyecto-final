@@ -2,22 +2,22 @@
 
 /* CITA EN INDEX */
 .cita {
-    margin: 0 0 10px 50px;
-    padding: 3px 25px;
+    margin: 0 0 0.625em 3.125em;
+    padding: 0.1875em 1.5625em;
     font-style: italic;
     text-align: right;
     color: $azul-fuerte;
-    border-left: 4px solid $azul-fuerte;
-    border-right: 4px solid $azul-fuerte;
+    border-left: 0.25em solid $azul-fuerte;
+    border-right: 0.25em solid $azul-fuerte;
     background-color: $blanco-transparente;
-    box-shadow: 0 4px 8px $negro-transparente;
-    font-size: 16px;
+    box-shadow: 0 0.25em 0.5em $negro-transparente;
+    font-size: 1em;
 
     #leonardo {
-        font-size: 16px;
+        font-size: 1em;
         text-align: right;
         font-weight: bold;
         color: $blanco;
-        margin-bottom: 2px;
+        margin-bottom: 0.125em;
     }
 }

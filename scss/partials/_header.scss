@@ -12,12 +12,12 @@
     align-items: center;
     font-weight: bold;
     justify-content: space-between;
-    padding: 3px;
-    font-size: 14px;
+    padding: 0.1875em;
+    font-size: 0.875rem;
 
     a {
         @include banners;
-        margin-right: 10px;
+        margin-right: 0.625em;
 
         &:hover,
         &:active {
@@ -26,8 +26,8 @@
         }
 
         img {
-            @include link-azul(20px, 20px);
-            margin-right: 5px;
+            @include link-azul(1.25em, 1.25em);
+            margin-right: 0.3125em;
 
             &:hover,
             &:active {
@@ -38,8 +38,8 @@
     }
 
     .social-icons img {
-        @include link-azul(20px, 20px);
-        margin-left: 10px;
+        @include link-azul(1.25em, 1.25em);
+        margin-left: 0.625em;
     }
 }
 
@@ -52,15 +52,15 @@
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
-    padding: 20px;
+    padding: 1.25em;
     align-items: center; 
 
     img {
-    @include link-blanco(180px, auto);
+    @include link-blanco(11.25em, auto);
 }
 
 p {
-    font-size: 36px;
+    font-size: 2.25rem;
     margin: 0;
 
 }

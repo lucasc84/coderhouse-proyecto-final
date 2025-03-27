@@ -4,8 +4,9 @@
 
 /* A. Pie de página */
 
+
 footer svg {
-    margin-bottom: -5px;
+    margin-bottom: -0.3125em;
 }
 
 .copyright {
@@ -13,6 +14,6 @@ footer svg {
         text-align: right;
         font-style: italic;
         @include banners;
-        font-size: 14px;
+        font-size: 0.875rem;
     }
 }

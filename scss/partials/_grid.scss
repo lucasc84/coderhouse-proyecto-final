@@ -7,8 +7,8 @@
 
     display: grid;
     grid-template-columns: 30% 30% 30%;
-    grid-template-rows: 80px 100px repeat(2, 250px);
-    padding-top: 50px;
+    grid-template-rows: 5em 6.25em repeat(2, 15.625em);
+    padding-top: 3.125em;
     grid-template-areas:
         "titulo titulo titulo"
         "foto1 texto1 texto1"
@@ -25,13 +25,13 @@
 }
 
 .contenedor-grid p {
-    font-size: 18px;
+    font-size: 1.125em;
 
 }
 
 .grid-titulo-1 {
     grid-area: titulo;
-    padding-bottom: 40px;
+    padding-bottom: 2.5em;
 
 }
 

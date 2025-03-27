@@ -1,7 +1,7 @@
 @use 'variables' as *;
 
 
-/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas
+/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas*/
 
 /* Reset CSS */
 
@@ -11,12 +11,20 @@
     box-sizing: border-box;
 }
 
+/* CONFIGURACION PARA INDEX.HTML y residual para subpaginas*/
+
+html {
+    font-size: 16px; 
+}
+
 /* BODY - Configuración general */
 
 body {
+    font-size: $font-size-base;
     background-color: $azul;
     display: flex;
     flex-direction: column;
+    margin: 0;
     padding: 1em;
     font-family: "Ubuntu", serif;
     color: $blanco;
