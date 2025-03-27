@@ -190,6 +190,15 @@ p {
   text-align: justify;
 }
 
+span {
+  font-weight: bold;
+}
+
+.main-img img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* CITA EN INDEX */
 .cita {
   margin: 0 0 0.625em 3.125em;
