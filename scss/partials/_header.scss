@@ -53,8 +53,19 @@
     text-transform: uppercase;
     justify-content: space-between;
     padding: 20px;
-}
+    align-items: center; 
 
-.titulo-logo img {
+    img {
     @include link-blanco(180px, auto);
 }
+
+p {
+    font-size: 36px;
+    margin: 0;
+
+}
+
+
+
+}
+

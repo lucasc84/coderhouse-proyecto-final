@@ -10,26 +10,25 @@
         display: none;
     }
 
-    h1 {
-        font-size: 22px;
-    }
-
-    h2 {
-        font-size: 16px;
-    }
-
     .titulo-logo {
         padding: 10px;
-    }
 
-    .titulo-logo img[src*="logo.png"] {
+        img {
         width: 120px;
         height: auto;
     }
+    p {
+        font-size: 24px;
+        margin: 0;
+    
+    }
+}
 
     .navbar-titulo {
         display: none;
     }
+
+
 
     .navbar-titulo-movil {
         color: $azul-oscuro;
@@ -142,4 +141,30 @@
     text-align: center;
 }
 
+
+
+    /* PAGINA NOSOTROS */
+
+    .carousel-caption {
+        max-height: 190px;
+    }
+
+    .carousel-item h4 {
+        font-size: 14px;
+    }
+
+    .carousel-item p {
+        font-size: 12px;
+    }
+
+
+    .carousel-caption {
+        max-width: 50%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: $negro-transparente;
+        border-radius: 8px;
+        box-sizing: border-box;
+    }
 }

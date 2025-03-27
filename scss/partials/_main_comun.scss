@@ -3,7 +3,7 @@
 
 /* MAIN - Contenido principal de la página */
 
-h3 {
+h1,h2 {
     color: $azul-fuerte;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -11,7 +11,7 @@ h3 {
     -webkit-text-stroke: 1px $azul-oscuro;
 }
 
-h4 {
+h3 {
     font-size: 18px;
 }
 

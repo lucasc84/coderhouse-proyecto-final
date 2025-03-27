@@ -82,14 +82,18 @@ body {
   text-transform: uppercase;
   justify-content: space-between;
   padding: 20px;
+  align-items: center;
 }
-
 .titulo-logo img {
   width: 180px;
   height: auto;
   color: #ffffff;
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   text-decoration: none;
+}
+.titulo-logo p {
+  font-size: 36px;
+  margin: 0;
 }
 
 /* NAVBAR: Menú de navegación (basado en bootstrap) */
@@ -164,7 +168,7 @@ nav .navbar-logo.scrolled {
 }
 
 /* MAIN - Contenido principal de la página */
-h3 {
+h1, h2 {
   color: #83E2E2;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -172,7 +176,7 @@ h3 {
   -webkit-text-stroke: 1px #0C0C89;
 }
 
-h4 {
+h3 {
   font-size: 18px;
 }
 
@@ -475,18 +479,16 @@ a.whatsapp-btn {
   .contact-info-text {
     display: none;
   }
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 16px;
-  }
   .titulo-logo {
     padding: 10px;
   }
-  .titulo-logo img[src*="logo.png"] {
+  .titulo-logo img {
     width: 120px;
     height: auto;
+  }
+  .titulo-logo p {
+    font-size: 24px;
+    margin: 0;
   }
   .navbar-titulo {
     display: none;
@@ -574,6 +576,25 @@ a.whatsapp-btn {
     font-size: 12px;
     text-align: center;
   }
+  /* PAGINA NOSOTROS */
+  .carousel-caption {
+    max-height: 190px;
+  }
+  .carousel-item h4 {
+    font-size: 14px;
+  }
+  .carousel-item p {
+    font-size: 12px;
+  }
+  .carousel-caption {
+    max-width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
 }
 /* MEDIA QUERIES */
 /* TAMAÑO PEQUEÑO (MOBILE) hasta 500px*/
@@ -581,18 +602,20 @@ a.whatsapp-btn {
   .contact-info-text {
     display: none;
   }
-  h1 {
-    font-size: 22px;
-  }
-  h2 {
-    font-size: 16px;
-  }
   .titulo-logo {
     padding: 10px;
+    flex-direction: row;
+    text-align: center;
   }
   .titulo-logo img {
-    width: 100px;
+    width: 80px;
     height: auto;
+    margin-left: 10px;
+  }
+  .titulo-logo p {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 5px;
   }
   .navbar-titulo {
     display: none;
