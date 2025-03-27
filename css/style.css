@@ -354,6 +354,10 @@ form.contacto textarea {
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
 
+.card .btn-primary {
+  margin: 0.1em;
+}
+
 /* GRID CONTAINER */
 .contenedor-grid {
   display: grid;
@@ -602,6 +606,13 @@ a.whatsapp-btn {
     background-color: rgba(0, 0, 0, 0.5019607843);
     border-radius: 0.5em;
     box-sizing: border-box;
+  }
+  #mapa {
+    width: 90%; /* Ajusta el ancho para que ocupe más espacio */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 1.25em; /* Añade un poco de espacio interno */
+    background-color: #ADD8E6; /* Asegura que el color celeste se mantenga */
+    border-radius: 0.5em; /* Mantén el diseño redondeado */
   }
 }
 /* MEDIA QUERIES */
