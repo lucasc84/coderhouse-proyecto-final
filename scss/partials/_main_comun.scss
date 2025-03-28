@@ -1,14 +1,18 @@
 @use 'variables' as *;
 
-
 /* MAIN - Contenido principal de la página */
 
-h1, h2 {
-    color: $azul-fuerte;
-    margin-top: 1.25em;
-    margin-bottom: 1.25em;
-    font-size: 2rem;
-    -webkit-text-stroke: 0.0625em $azul-oscuro;
+@mixin heading-style($color, $margin, $font-size, $stroke-color, $stroke-width) {
+    color: $color;
+    margin-top: $margin;
+    margin-bottom: $margin;
+    font-size: $font-size;
+    -webkit-text-stroke: $stroke-width $stroke-color;
+}
+
+h1,
+h2 {
+    @include heading-style($azul-fuerte, 1.25em, 2rem, $azul-oscuro, 0.0625em);
 }
 
 h3 {
@@ -22,10 +26,12 @@ p {
 }
 
 span {
-font-weight: bold;
+    font-weight: bold;
 }
 
-.main-img img {
-    max-width: 100%;
-    height: auto;
+.main-img {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }

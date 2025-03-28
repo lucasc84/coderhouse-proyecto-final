@@ -1,4 +1,5 @@
 @use 'variables' as *;
+@use 'navbar' as nav; // Asegúrate de que el archivo donde está definido el mixin sea accesible
 
 /* MEDIA QUERIES */
 
@@ -29,19 +30,8 @@
     }
 
     .navbar-titulo-movil {
-        color: $azul-oscuro;
-        text-decoration: none;
-        background-color: $azul-fuerte;
-        font-weight: bold;
-        font-size: 1rem;
-        border: 0.0625em solid $azul-oscuro;
-        padding: 0.0625em 0.625em;
-        border-radius: 0.9375em;
+        @include nav.navbar-titulo-style($azul-fuerte, $azul-oscuro, $azul-oscuro);
         animation: blink 2s infinite;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        width: auto;
     }
 
     .navbar-text.scrolled {
@@ -60,16 +50,16 @@
         justify-content: center;
         flex-wrap: wrap;
         width: 100%;
-    }
 
-    .navbar-nav .nav-item {
-        margin-left: 0.625em;
-        margin-right: 0.625em;
-    }
+        .nav-item {
+            margin-left: 0.625em;
+            margin-right: 0.625em;
 
-    .navbar-nav .nav-item:last-child {
-        margin-left: 0.625em;
-        margin-right: 0.625em;
+            &:last-child {
+                margin-left: 0.625em;
+                margin-right: 0.625em;
+            }
+        }
     }
 
     .contenedor-grid {
@@ -85,46 +75,46 @@
             "texto2"
             "foto3"
             "texto3";
-    }
 
-    .contenedor-grid img {
-        width: 100%;
-        height: auto;
-        justify-self: center;
-    }
+        img {
+            width: 100%;
+            height: auto;
+            justify-self: center;
+        }
 
-    .contenedor-grid p {
-        font-size: 1.125rem;
-        margin-top: 1.25em;
-        margin-bottom: 1.25em;
-    }
+        p {
+            font-size: 1.125rem;
+            margin-top: 1.25em;
+            margin-bottom: 1.25em;
+        }
 
-    .grid-titulo-1 {
-        grid-area: titulo;
-    }
+        .grid-titulo-1 {
+            grid-area: titulo;
+        }
 
-    .grid-img-1 {
-        grid-area: foto1;
-    }
+        .grid-img-1 {
+            grid-area: foto1;
+        }
 
-    .grid-img-2 {
-        grid-area: foto3;
-    }
+        .grid-img-2 {
+            grid-area: foto3;
+        }
 
-    .grid-img-3 {
-        grid-area: foto2;
-    }
+        .grid-img-3 {
+            grid-area: foto2;
+        }
 
-    .grid-texto-1 {
-        grid-area: texto1;
-    }
+        .grid-texto-1 {
+            grid-area: texto1;
+        }
 
-    .grid-texto-2 {
-        grid-area: texto2;
-    }
+        .grid-texto-2 {
+            grid-area: texto2;
+        }
 
-    .grid-texto-3 {
-        grid-area: texto3;
+        .grid-texto-3 {
+            grid-area: texto3;
+        }
     }
 
     .copyright p {
@@ -133,34 +123,21 @@
     }
 
     .carousel-caption {
-        max-height: 11.875em;
-    }
-
-    .carousel-item h4 {
-        font-size: 0.875rem;
-    }
-
-    .carousel-item p {
-        font-size: 0.75rem;
-    }
-
-    .carousel-caption {
-        max-width: 50%;
+        max-width: 70%;
         width: 100%;
         margin: 0 auto;
         padding: 0.625em;
         background-color: $negro-transparente;
         border-radius: 0.5em;
         box-sizing: border-box;
-    }
-    #mapa {
-        width: 90%; /* Ajusta el ancho para que ocupe más espacio */
-        margin: 0 auto; /* Centra el contenedor horizontalmente */
-        padding: 1.25em; /* Añade un poco de espacio interno */
-        background-color: $azul-claro; /* Asegura que el color celeste se mantenga */
-        border-radius: 0.5em; /* Mantén el diseño redondeado */
-    }
+        max-height: 11.875em;
 
+        h4 {
+            font-size: 0.875rem;
+        }
 
+        p {
+            font-size: 0.75rem;
+        }
+    }
 }
-

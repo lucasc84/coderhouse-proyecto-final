@@ -172,7 +172,8 @@ nav .navbar-logo.scrolled {
 }
 
 /* MAIN - Contenido principal de la página */
-h1, h2 {
+h1,
+h2 {
   color: #83E2E2;
   margin-top: 1.25em;
   margin-bottom: 1.25em;
@@ -221,7 +222,7 @@ span {
 }
 
 /* SUBPAGINAS (solo aplicable a ciertas subpaginas */
-/*  Boton de home para todas las subáginas menos index.html */
+/* Botón de home para todas las subpáginas menos index.html */
 .home {
   width: 1.875em;
   height: 1.875em;
@@ -247,6 +248,9 @@ span {
   margin-top: 1.25em;
 }
 .multimedia .musica audio {
+  color: #0C0C89;
+  background-color: #ADD8E6;
+  text-decoration: none;
   width: 100%;
   max-width: 31.25em;
   margin: 0 auto;
@@ -302,14 +306,12 @@ form.contacto {
   border-radius: 0.5em;
   background-color: #ADD8E6;
 }
-
 form.contacto label {
   display: block;
   margin-bottom: 0.3125em;
   font-size: 1.1rem;
   color: #000000;
 }
-
 form.contacto input,
 form.contacto textarea {
   width: 100%;
@@ -321,20 +323,21 @@ form.contacto textarea {
 
 /* B. Mapa insertado */
 #mapa {
-  width: 48%;
+  width: 90%;
   color: #0C0C89;
   margin: 1.25em auto;
   padding: 1.25em;
   border-radius: 0.5em;
   background-color: #ADD8E6;
+  width: 48%;
 }
 
 .mapa-ubicacion {
-  width: 100%; /* Ocupa el 100% del ancho del contenedor */
+  width: 100%;
   height: 23.125em;
-  border: none; /* Elimina el borde */
-  margin: 0; /* Elimina márgenes */
-  overflow: hidden; /* Evita el scroll interno */
+  border: none;
+  margin: 0;
+  overflow: hidden;
 }
 
 /* C. BOOTSTRAP - Cards */
@@ -345,7 +348,6 @@ form.contacto textarea {
   color: #0C0C89;
   background-color: #ADD8E6;
 }
-
 .card img {
   width: 1.25em;
   height: 1.25em;
@@ -353,7 +355,6 @@ form.contacto textarea {
   margin-left: 0.9375em;
   filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
 }
-
 .card .btn-primary {
   margin: 0.1em;
 }
@@ -425,6 +426,8 @@ form.contacto textarea {
 }
 .boton:hover, .btn-primary:hover, .boton-yt:hover {
   transition: background-color 1s ease;
+}
+.boton:hover, .btn-primary:hover, .boton-yt:hover {
   background-color: #006290;
 }
 
@@ -435,7 +438,6 @@ form.contacto textarea {
   width: fit-content;
 }
 .boton-yt:hover {
-  transition: background-color 1s ease;
   color: #ADD8E6;
   background-color: #0C0C89;
 }
@@ -514,15 +516,10 @@ a.whatsapp-btn {
     text-decoration: none;
     background-color: #83E2E2;
     font-weight: bold;
-    font-size: 1rem;
     border: 0.0625em solid #0C0C89;
-    padding: 0.0625em 0.625em;
+    padding: 0.1875em 0.625em;
     border-radius: 0.9375em;
     animation: blink 2s infinite;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: auto;
   }
   .navbar-text.scrolled {
     padding: 0.0625em;
@@ -564,25 +561,25 @@ a.whatsapp-btn {
     margin-top: 1.25em;
     margin-bottom: 1.25em;
   }
-  .grid-titulo-1 {
+  .contenedor-grid .grid-titulo-1 {
     grid-area: titulo;
   }
-  .grid-img-1 {
+  .contenedor-grid .grid-img-1 {
     grid-area: foto1;
   }
-  .grid-img-2 {
+  .contenedor-grid .grid-img-2 {
     grid-area: foto3;
   }
-  .grid-img-3 {
+  .contenedor-grid .grid-img-3 {
     grid-area: foto2;
   }
-  .grid-texto-1 {
+  .contenedor-grid .grid-texto-1 {
     grid-area: texto1;
   }
-  .grid-texto-2 {
+  .contenedor-grid .grid-texto-2 {
     grid-area: texto2;
   }
-  .grid-texto-3 {
+  .contenedor-grid .grid-texto-3 {
     grid-area: texto3;
   }
   .copyright p {
@@ -590,34 +587,25 @@ a.whatsapp-btn {
     text-align: center;
   }
   .carousel-caption {
-    max-height: 11.875em;
-  }
-  .carousel-item h4 {
-    font-size: 0.875rem;
-  }
-  .carousel-item p {
-    font-size: 0.75rem;
-  }
-  .carousel-caption {
-    max-width: 50%;
+    max-width: 70%;
     width: 100%;
     margin: 0 auto;
     padding: 0.625em;
     background-color: rgba(0, 0, 0, 0.5019607843);
     border-radius: 0.5em;
     box-sizing: border-box;
+    max-height: 11.875em;
   }
-  #mapa {
-    width: 90%; /* Ajusta el ancho para que ocupe más espacio */
-    margin: 0 auto; /* Centra el contenedor horizontalmente */
-    padding: 1.25em; /* Añade un poco de espacio interno */
-    background-color: #ADD8E6; /* Asegura que el color celeste se mantenga */
-    border-radius: 0.5em; /* Mantén el diseño redondeado */
+  .carousel-caption h4 {
+    font-size: 0.875rem;
+  }
+  .carousel-caption p {
+    font-size: 0.75rem;
   }
 }
 /* MEDIA QUERIES */
 /* TAMAÑO PEQUEÑO (MOBILE) hasta 500px*/
-@media (max-width: 31.25em) {
+@media (max-width: 500px) {
   .contact-info-text {
     display: none;
   }
@@ -644,9 +632,8 @@ a.whatsapp-btn {
     text-decoration: none;
     background-color: #83E2E2;
     font-weight: bold;
-    font-size: 1rem;
     border: 0.0625em solid #0C0C89;
-    padding: 0.0625em 0.625em;
+    padding: 0.1875em 0.625em;
     border-radius: 0.9375em;
     animation: blink 2s infinite;
   }
@@ -675,25 +662,25 @@ a.whatsapp-btn {
     margin-top: 1.25em;
     margin-bottom: 1.25em;
   }
-  .grid-titulo-1 {
+  .contenedor-grid .grid-titulo-1 {
     grid-area: titulo;
   }
-  .grid-img-1 {
+  .contenedor-grid .grid-img-1 {
     grid-area: foto1;
   }
-  .grid-img-2 {
+  .contenedor-grid .grid-img-2 {
     grid-area: foto3;
   }
-  .grid-img-3 {
+  .contenedor-grid .grid-img-3 {
     grid-area: foto2;
   }
-  .grid-texto-1 {
+  .contenedor-grid .grid-texto-1 {
     grid-area: texto1;
   }
-  .grid-texto-2 {
+  .contenedor-grid .grid-texto-2 {
     grid-area: texto2;
   }
-  .grid-texto-3 {
+  .contenedor-grid .grid-texto-3 {
     grid-area: texto3;
   }
   .copyright p {
@@ -743,12 +730,19 @@ a.whatsapp-btn {
     filter: brightness(0) saturate(100%) invert(100%) sepia(21%) saturate(10%) hue-rotate(194deg) brightness(102%) contrast(103%);
   }
   .carousel-caption {
+    max-width: 70%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.625em;
+    background-color: rgba(0, 0, 0, 0.5019607843);
+    border-radius: 0.5em;
+    box-sizing: border-box;
     max-height: 11.875em;
   }
-  .carousel-item h4 {
+  .carousel-caption h4 {
     font-size: 0.875rem;
   }
-  .carousel-item p {
+  .carousel-caption p {
     font-size: 0.75rem;
   }
   .main-nosotros,
@@ -758,14 +752,5 @@ a.whatsapp-btn {
   .multimedia,
   .multimedia p {
     text-align: center;
-  }
-  .carousel-caption {
-    max-width: 70%;
-    width: 100%;
-    margin: 0 auto;
-    padding: 0.625em;
-    background-color: rgba(0, 0, 0, 0.5019607843);
-    border-radius: 0.5em;
-    box-sizing: border-box;
   }
 }/*# sourceMappingURL=style.css.map */

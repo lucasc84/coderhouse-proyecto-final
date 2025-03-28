@@ -2,14 +2,18 @@
 
 /* NAVBAR: Menú de navegación (basado en bootstrap) */
 
-.navbar-titulo {
-    color: $azul-oscuro;
+@mixin navbar-titulo-style($bg-color, $text-color, $border-color) {
+    color: $text-color;
     text-decoration: none;
-    background-color: $azul-fuerte;
+    background-color: $bg-color;
     font-weight: bold;
-    border: 0.0625em solid $azul-oscuro;
+    border: 0.0625em solid $border-color;
     padding: 0.1875em 0.625em;
     border-radius: 0.9375em;
+}
+
+.navbar-titulo {
+    @include navbar-titulo-style($azul-fuerte, $azul-oscuro, $azul-oscuro);
 }
 
 /* A. navbar - estilos en links */
@@ -35,6 +39,7 @@
     }
 
     &-fixed {
+
         img.navbar-logo,
         navbar-text,
         p {

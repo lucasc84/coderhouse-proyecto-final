@@ -1,9 +1,18 @@
 @use 'variables' as *;
 
-
 /* HEADER */
 
 /* A. Banner de Encabezado - Contacto y Redes  */
+
+@mixin link-hover-style($color-hover) {
+    transition: color 1s ease;
+    color: $color-hover;
+}
+
+@mixin img-hover-style($filter-hover) {
+    transition: filter 1s ease;
+    filter: $filter-hover;
+}
 
 .banner-top {
     @include banners;
@@ -21,8 +30,7 @@
 
         &:hover,
         &:active {
-            transition: color 1s ease;
-            color: $blanco;
+            @include link-hover-style($blanco);
         }
 
         img {
@@ -31,8 +39,7 @@
 
             &:hover,
             &:active {
-                transition: filter 1s ease;
-                filter: $blanco-i;
+                @include img-hover-style($blanco-i);
             }
         }
     }
@@ -43,8 +50,6 @@
     }
 }
 
-
-
 /* B. Banner Principal - Título y logo */
 
 .titulo-logo {
@@ -53,19 +58,14 @@
     text-transform: uppercase;
     justify-content: space-between;
     padding: 1.25em;
-    align-items: center; 
+    align-items: center;
 
     img {
-    @include link-blanco(11.25em, auto);
+        @include link-blanco(11.25em, auto);
+    }
+
+    p {
+        font-size: 2.25rem;
+        margin: 0;
+    }
 }
-
-p {
-    font-size: 2.25rem;
-    margin: 0;
-
-}
-
-
-
-}
-

@@ -2,18 +2,25 @@
 
 @use 'variables' as *;
 
-.boton {
+@mixin boton-base($bg-color, $text-color) {
     width: 100%;
     padding: 0.5em 1em;
     font-size: 1.1rem;
-    background-color: $azul-oscuro;
-    color: $blanco;
+    background-color: $bg-color;
+    color: $text-color;
     border: none;
     border-radius: 0.25em;
     cursor: pointer;
 
     &:hover {
         transition: background-color 1s ease;
+    }
+}
+
+.boton {
+    @include boton-base($azul-oscuro, $blanco);
+
+    &:hover {
         background-color: $azul;
     }
 }
@@ -25,7 +32,6 @@
     width: fit-content;
 
     &:hover {
-        transition: background-color 1s ease;
         color: $azul-claro;
         background-color: $azul-oscuro;
 
@@ -45,5 +51,3 @@
     background-color: $azul-oscuro;
     width: fit-content;
 }
-
-

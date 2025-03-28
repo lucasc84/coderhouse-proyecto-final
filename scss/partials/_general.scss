@@ -1,6 +1,5 @@
 @use 'variables' as *;
 
-
 /* CONFIGURACION PARA INDEX.HTML y residual para subpaginas*/
 
 /* Reset CSS */
@@ -13,13 +12,7 @@
 
 /* CONFIGURACION PARA INDEX.HTML y residual para subpaginas*/
 
-html {
-    font-size: 16px; 
-}
-
-/* BODY - Configuración general */
-
-body {
+@mixin body-style {
     font-size: $font-size-base;
     background-color: $azul;
     display: flex;
@@ -28,4 +21,14 @@ body {
     padding: 1em;
     font-family: "Ubuntu", serif;
     color: $blanco;
+}
+
+html {
+    font-size: 16px;
+}
+
+/* BODY - Configuración general */
+
+body {
+    @include body-style;
 }

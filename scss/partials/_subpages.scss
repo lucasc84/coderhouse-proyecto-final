@@ -1,19 +1,20 @@
 @use 'variables' as *;
 
-
 /* SUBPAGINAS (solo aplicable a ciertas subpaginas */
 
-/*  Boton de home para todas las subáginas menos index.html */
+/* Botón de home para todas las subpáginas menos index.html */
 
-.home {
+@mixin home-button-style {
     @include link-azul(1.875em, 1.875em);
     margin-left: 1.25em;
-
 
     &:hover,
     &:active {
         transition: filter 1s ease;
         filter: $blanco-i;
     }
+}
 
+.home {
+    @include home-button-style;
 }
