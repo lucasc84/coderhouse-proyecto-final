@@ -587,7 +587,7 @@ a.whatsapp-btn {
     text-align: center;
   }
   .carousel-caption {
-    max-width: 70%;
+    max-width: 50%;
     width: 100%;
     margin: 0 auto;
     padding: 0.625em;
@@ -597,7 +597,7 @@ a.whatsapp-btn {
     max-height: 11.875em;
   }
   .carousel-caption h4 {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
   }
   .carousel-caption p {
     font-size: 0.75rem;
